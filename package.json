@@ -1,0 +1,12 @@
+{
+  "name": "e-sennik",
+  "version": "2.0.0",
+  "description": "",
+  "author": "",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "scripts": {
+    "scss": "node-sass --watch scss -o scss"
+  }
+}
