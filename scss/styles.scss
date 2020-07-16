@@ -598,11 +598,12 @@ ol {
 .hero-rocket {
 	position: absolute;
 	bottom: 8px;
-	right: -198px;
+	// right: -198px;
+	right: 0;
 	img {
 		position: relative;
-		-webkit-animation: rocket 2s linear infinite;
-		animation: rocket 2s linear infinite;
+		-webkit-animation: rocket 3s linear infinite;
+		animation: rocket 3s linear infinite;
 	}
 }
 
