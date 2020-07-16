@@ -64,7 +64,7 @@
 					<div class="col-lg-7 pr-0">
 						<h2>Znajdź sen</h2>
 						<p>Wyszukaj znaczenie snu, o którym ostatnio śniłeś/aś. Wpisz poniżej kluczowe słowo, związane ze snem.</p>
-						<a href="#" class="site-btn">Get your plan</a>
+						<a href="#" class="site-btn dark">Znajdź swój sen</a>
 					</div>
 				</div>
 				<div class="hero-rocket">

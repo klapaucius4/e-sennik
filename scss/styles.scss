@@ -6,6 +6,7 @@
  ====================================*/
 
 $color: #eb2b63;
+$color-dark: #18114c;
 $color2: #25ae88;
 $color3: #7fabda;
 /*----------------------------------------*/
@@ -179,6 +180,9 @@ ol {
 	line-height: 1;
 	cursor: pointer;
 	text-align: center;
+	&.dark {
+		background: $color-dark;
+	}
 	&:hover {
 		color: #fff;
 	}
