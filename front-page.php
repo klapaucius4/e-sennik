@@ -1,5 +1,30 @@
 <?php get_header(); ?>
 
+	<!-- Hero section -->
+	<section class="hero-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/bg.svg">
+		<div class="container h-100">
+			<div class="hero-content text-white">
+				<div class="row w-100">
+					<div class="col-lg-6 pr-0">
+						<h1>Sennik Online</h1>
+						<p class="mb-2">Wyszukaj znaczenie swoich snów w naszej internetowej księdze snów.</p>
+						<!-- <a href="#" class="site-btn dark">Znajdź swój sen</a> -->
+						<div class="domain-form-warp">
+							<form class="domain-search-form">
+								<input type="text" placeholder="Co Ci się śniło?" class="d-block w-100">
+								<button class="site-btn d-block mt-3">Znajdź sen</button>
+							</form>
+						</div>
+					</div>
+					<!-- <div class="col-lg-5"></div> -->
+				</div>
+				<div class="hero-rocket">
+					<img src="<?= get_template_directory_uri(); ?>/img/birds.svg" alt="<?= __('Księżyc'); ?>">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
 
 	<!-- Features section -->
 	<section class="features-section spad">
@@ -215,23 +240,6 @@
 	</section>
 	<!-- Pricing section end -->
 
-
-
-	<!-- Banner section -->
-	<section class="banner-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/banner-bg.jpg">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-9 banner-text text-white">
-					<h3>Dedicated hosting solutions only $129.99/month</h3>
-					<p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-				</div>
-				<div class="col-lg-3 text-left text-lg-right">
-					<a href="" class="site-btn">Get Started</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Banner section end -->
 
 
 <?php get_footer();

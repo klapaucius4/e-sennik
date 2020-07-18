@@ -1,11 +1,26 @@
-
+	<!-- Banner section -->
+	<section class="banner-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/banner-bg.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 banner-text text-white">
+					<h3>Chciałbyś porozmawiać z wróżką lub wróżbitą?</h3>
+					<p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+				</div>
+				<div class="col-lg-4 text-left text-lg-right">
+					<a href="" class="site-btn">Odbierz darmowe pytanie do wróżki!</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Banner section end -->
+	
 	<!-- Footer top section -->
 	<section class="footer-top-section text-white spad">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="footer-widget about-widget">
-						<img src="<?= get_template_directory_uri(); ?>/img/logo.png" alt="logo">
+						<img src="<?= get_template_directory_uri(); ?>/img/logo-white.svg" alt="logo">
 						<p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum.Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum</p>
 						<div class="fw-social social">
 							<a href="#"><i class="fa fa-pinterest"></i></a>

@@ -413,6 +413,8 @@ ol {
 .site-logo {
   display: inline-block;
   margin-left: 50px; }
+  .site-logo img {
+    width: 360px; }
 
 .nav-switch {
   display: none; }
@@ -471,8 +473,8 @@ ol {
   justify-content: center;
   height: 100%;
   position: relative; }
-  .hero-content h2 {
-    font-size: 90px;
+  .hero-content h1 {
+    font-size: 36px;
     font-weight: 600;
     margin-bottom: 10px;
     line-height: 1; }
@@ -492,37 +494,25 @@ ol {
 
 @-webkit-keyframes rocket {
   0% {
-    left: 20px;
-    bottom: 20px; }
-  25% {
-    left: -20px;
-    bottom: 20px; }
-  50% {
-    left: -20px;
-    bottom: 0px; }
-  75% {
     left: 0px;
     bottom: 0px; }
-  100% {
+  50% {
     left: 20px;
-    bottom: 20px; } }
+    bottom: 20px; }
+  100% {
+    left: 0px;
+    bottom: 0px; } }
 
 @keyframes rocket {
   0% {
-    left: 20px;
-    bottom: 20px; }
-  25% {
-    left: -20px;
-    bottom: 20px; }
-  50% {
-    left: -20px;
-    bottom: 0px; }
-  75% {
     left: 0px;
     bottom: 0px; }
-  100% {
+  50% {
     left: 20px;
-    bottom: 20px; } }
+    bottom: 20px; }
+  100% {
+    left: 0px;
+    bottom: 0px; } }
 
 /* ----------------
   Features
@@ -1225,8 +1215,8 @@ ol {
     padding-bottom: 50px; }
   .footer-widget {
     margin-bottom: 40px; }
-  .hero-content h2 {
-    font-size: 50px;
+  .hero-content h1 {
+    font-size: 30px;
     margin-bottom: 30px; }
   .footer-section {
     text-align: center; }
@@ -1271,8 +1261,8 @@ ol {
     font-size: 35px; }
   .hero-section {
     height: 750px; }
-  .hero-content h2 {
-    font-size: 40px;
+  .hero-content h1 {
+    font-size: 26px;
     margin-bottom: 30px; }
   .domain-search-form {
     text-align: center; }

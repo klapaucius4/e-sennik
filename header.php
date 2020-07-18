@@ -38,7 +38,7 @@
 
 	<!-- Header section -->
 	<header class="header-section">
-		<a href="./index.html" class="site-logo"><img src="<?= get_template_directory_uri(); ?>/img/logo.png" alt=""></a>
+		<a href="<?= home_url(); ?>" class="site-logo"><img src="<?= get_template_directory_uri(); ?>/img/logo-white.svg" alt=""></a>
 		<div class="nav-switch">
 			<i class="fa fa-bars"></i>
 		</div>
@@ -54,23 +54,3 @@
 		</div>
 	</header>
 	<!-- Header section end -->
-
-
-	<!-- Hero section -->
-	<section class="hero-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/bg.svg">
-		<div class="container h-100">
-			<div class="hero-content text-white">
-				<div class="row">
-					<div class="col-lg-7 pr-0">
-						<h2>Znajdź sen</h2>
-						<p>Wyszukaj znaczenie snu, o którym ostatnio śniłeś/aś. Wpisz poniżej kluczowe słowo, związane ze snem.</p>
-						<a href="#" class="site-btn dark">Znajdź swój sen</a>
-					</div>
-				</div>
-				<div class="hero-rocket">
-					<img src="<?= get_template_directory_uri(); ?>/img/birds.svg" alt="<?= __('Księżyc'); ?>">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Hero section end -->
