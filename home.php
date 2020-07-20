@@ -11,35 +11,13 @@
 	</section>
 	<!-- Page Top section end -->
 
-
-
-	<!-- Features section -->
-	<section class="features-section spad">
-		<div class="container">
-			<div class="section-title">
-				<img src="<?= get_template_directory_uri(); ?>/img/section-title-icon.png" alt="#">
-				<p>The best out there</p>
-				<h2>See our features</h2>
-			</div>
-			<div class="row">
-				<?php for($i=0; $i<=40; $i++): ?>
-				<div class="col-md-1 feature-item">
-					<div class="ft-icon">
-						<i class="flaticon-domain-registration"></i>
-					</div>
-				</div>
-				<?php endfor; ?>
-			</div>
-		</div>
-	</section>
-	<!-- Features section end -->
-
+	<?php get_template_part('template-parts/letters'); ?>
 
 	<!-- Blog posts section -->
 	<section class="blog-section spad">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-9">
+				<div class="col-lg-12">
 					<div class="blog-post">
 						<img src="img/blog/1.jpg" alt="" class="post-thumb">
 						<div class="post-date">Oct 25, 2018</div>

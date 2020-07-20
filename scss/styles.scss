@@ -6,7 +6,9 @@
  ====================================*/
 
 $color: #eb2b63;
-$color-dark: #18114c;
+// $color-blue: #1d1752;
+// $color-dark: #18114c;
+$color-dark: #1d1752;
 $color2: #25ae88;
 $color3: #7fabda;
 /*----------------------------------------*/
@@ -651,16 +653,16 @@ ol {
 
 .features-section {
 	.section-title {
-		margin-bottom: 130px;
+		// margin-bottom: 130px;
 	}
 	.container {
-		margin-bottom: -70px;
+		// margin-bottom: -70px;
 	}
 }
 
 .feature-item {
 	text-align: center;
-	margin-bottom: 55px;
+	margin-bottom: 20px;
 	.ft-icon {
 		display: -ms-inline-flex;
 		display: -webkit-inline-box;
@@ -668,7 +670,7 @@ ol {
 		display: inline-flex;
 		width: 87px;
 		height: 87px;
-		background: $color;
+		background: $color-dark;
 		font-size: 43px;
 		color: #fff;
 		-webkit-box-align: center;
@@ -678,7 +680,7 @@ ol {
 		-ms-flex-pack: center;
 		justify-content: center;
 		border-radius: 50%;
-		margin-bottom: 40px;
+		// margin-bottom: 40px;
 	}
 	h4 {
 		margin-bottom: 28px;
@@ -802,7 +804,7 @@ ol {
 .testimonial-item {
 	overflow: hidden;
 	.ti-content {
-		background: #eef6f9;
+		background: $color;
 		padding: 48px 35px 45px 38px;
 		border-radius: 15px;
 		margin-bottom: 42px;
@@ -810,6 +812,7 @@ ol {
 		p {
 			font-size: 15px;
 			margin-bottom: 0;
+			color: #ffffff;
 		}
 		&:after {
 			position: absolute;

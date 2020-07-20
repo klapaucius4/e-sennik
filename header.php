@@ -46,11 +46,23 @@
 			<div class="user-panel">
 				<a href="#">Wróżba online</a>
 			</div>
-			<ul class="main-menu">
+
+			<?php
+			if(has_nav_menu('menu-1')):
+				wp_nav_menu(
+					array(
+						'menu'   => 'menu-1',
+						'container' => false,
+						'menu_class' => 'main-menu'
+					)
+				);
+			endif;
+			?>
+			<!-- <ul class="main-menu">
 				<li><a href="./index.html">Strona główna</a></li>
 				<li><a href="./about.html">Alfabetyczny spis snów</a></li>
 				<li><a href="./blog.html">Artykuły</a></li>
-			</ul>
+			</ul> -->
 		</div>
 	</header>
 	<!-- Header section end -->

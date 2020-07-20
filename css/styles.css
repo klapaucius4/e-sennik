@@ -144,7 +144,7 @@ ol {
   cursor: pointer;
   text-align: center; }
   .site-btn.dark {
-    background: #18114c; }
+    background: #1d1752; }
   .site-btn:hover {
     color: #fff; }
   .site-btn.sb-line {
@@ -517,15 +517,9 @@ ol {
 /* ----------------
   Features
 ---------------------*/
-.features-section .section-title {
-  margin-bottom: 130px; }
-
-.features-section .container {
-  margin-bottom: -70px; }
-
 .feature-item {
   text-align: center;
-  margin-bottom: 55px; }
+  margin-bottom: 20px; }
   .feature-item .ft-icon {
     display: -ms-inline-flex;
     display: -webkit-inline-box;
@@ -533,7 +527,7 @@ ol {
     display: inline-flex;
     width: 87px;
     height: 87px;
-    background: #eb2b63;
+    background: #1d1752;
     font-size: 43px;
     color: #fff;
     -webkit-box-align: center;
@@ -542,8 +536,7 @@ ol {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border-radius: 50%;
-    margin-bottom: 40px; }
+    border-radius: 50%; }
   .feature-item h4 {
     margin-bottom: 28px; }
   .feature-item.fi-center-top .ft-icon {
@@ -640,14 +633,15 @@ ol {
 .testimonial-item {
   overflow: hidden; }
   .testimonial-item .ti-content {
-    background: #eef6f9;
+    background: #eb2b63;
     padding: 48px 35px 45px 38px;
     border-radius: 15px;
     margin-bottom: 42px;
     position: relative; }
     .testimonial-item .ti-content p {
       font-size: 15px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      color: #ffffff; }
     .testimonial-item .ti-content:after {
       position: absolute;
       content: "";
