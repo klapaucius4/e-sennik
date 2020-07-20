@@ -12,7 +12,7 @@
 						<div class="domain-form-warp">
 							<form class="domain-search-form">
 								<input type="text" placeholder="Co Ci się śniło?" class="d-block w-100">
-								<button class="site-btn d-block mt-3">Znajdź sen</button>
+								<button class="site-btn d-block dark mt-3">Znajdź sen</button>
 							</form>
 						</div>
 					</div>
@@ -32,7 +32,7 @@
 			<div class="row">
 				<!-- Skills -->
 				<div class="col-lg-6">
-					<h2>fasdfasdfas dfasdf as</h2>
+					<h2>Internetowa księga snów</h2>
 					<p>testtt</p>
 				</div>
 				<!-- Testimonials -->
@@ -59,10 +59,10 @@
 
 
 	<!-- Domain search section -->
-	<section class="domain-search-section spad set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/domain-bg.jpg">
+	<section class="domain-search-section spad set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/blue-bg.svg">
 		<div class="container">
 			<div class="section-title st-white">
-				<img src="<?= get_template_directory_uri(); ?>/img/section-title-icon.png" alt="#">
+				<img src="<?= get_template_directory_uri(); ?>/img/section-title-icon-light.svg" alt="">
 				<p>The best out there</p>
 				<h2>See our features</h2>
 			</div>

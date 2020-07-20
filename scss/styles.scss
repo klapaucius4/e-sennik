@@ -5,9 +5,7 @@
  ------------------------------------
  ====================================*/
 
-$color: #eb2b63;
-// $color-blue: #1d1752;
-// $color-dark: #18114c;
+$color: #e55a99;
 $color-dark: #1d1752;
 $color2: #25ae88;
 $color3: #7fabda;
@@ -680,6 +678,7 @@ ol {
 		-ms-flex-pack: center;
 		justify-content: center;
 		border-radius: 50%;
+		font-weight: bold;
 		// margin-bottom: 40px;
 	}
 	h4 {
@@ -823,7 +822,7 @@ ol {
 			height: 0;
 			border-left: 10px solid transparent;
 			border-right: 10px solid transparent;
-			border-top: 17px solid #eef6f9;
+			border-top: 17px solid $color;
 		}
 	}
 	.ti-author-pic {

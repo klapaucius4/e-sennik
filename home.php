@@ -17,7 +17,7 @@
 	<section class="blog-section spad">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-9">
 					<div class="blog-post">
 						<img src="img/blog/1.jpg" alt="" class="post-thumb">
 						<div class="post-date">Oct 25, 2018</div>
