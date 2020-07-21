@@ -172,27 +172,28 @@ $(window).on('load', function() {
 
 
 
-	var options = {
-		url: "resources/people.json",
-	
-		getValue: "name",
-	
-		template: {
-			type: "description",
-			fields: {
-				description: "email"
+	  
+	$(".search-auto-complete").on('click', function(){
+		var availableTags = [];
+
+		$.ajax({
+			url : "/wp-json/wp/v2/posts",
+			method: "GET",
+			data: {
+				search: $(this).val()
+			},
+			success : function(response) {
+				response.forEach(function(item, index) {
+					// console.log(item.title.rendered);
+					availableTags.push(item.title.rendered);
+				});
 			}
-		},
-	
-		list: {
-			match: {
-				enabled: true
-			}
-		},
-	
-		theme: "plate-dark"
-	};
-	$(".autocomplete-input").easyAutocomplete(options);
+		});
+
+		$(this).autocomplete({
+			source: availableTags
+		  });
+	});
 		
 
 	

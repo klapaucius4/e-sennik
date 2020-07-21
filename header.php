@@ -19,7 +19,6 @@
 	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/flaticon.css"/>
 	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/owl.carousel.min.css"/>
 	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/animate.css"/>
-	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/easy-autocomplete.min.css"/>
 	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/styles.css"/>
 
 
