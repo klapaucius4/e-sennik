@@ -113,6 +113,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="<?= get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 	<script src="<?= get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
 	<script src="<?= get_template_directory_uri(); ?>/js/circle-progress.min.js"></script>
+	<script src="<?= get_template_directory_uri(); ?>/js/jquery.easy-autocomplete.min.js"></script>
 	<script src="<?= get_template_directory_uri(); ?>/js/main.js"></script>
 
     <?php wp_footer(); ?>

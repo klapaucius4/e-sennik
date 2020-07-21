@@ -169,4 +169,32 @@ $(window).on('load', function() {
 
 	});
 
+
+
+
+	var options = {
+		url: "resources/people.json",
+	
+		getValue: "name",
+	
+		template: {
+			type: "description",
+			fields: {
+				description: "email"
+			}
+		},
+	
+		list: {
+			match: {
+				enabled: true
+			}
+		},
+	
+		theme: "plate-dark"
+	};
+	$(".autocomplete-input").easyAutocomplete(options);
+		
+
+	
+
 })(jQuery);

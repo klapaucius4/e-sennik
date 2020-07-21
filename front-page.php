@@ -11,7 +11,7 @@
 						<!-- <a href="#" class="site-btn dark">Znajdź swój sen</a> -->
 						<div class="domain-form-warp">
 							<form class="domain-search-form">
-								<input type="text" placeholder="Co Ci się śniło?" class="d-block w-100">
+								<input type="text" placeholder="Co Ci się śniło?" class="autocomplete-input d-block w-100">
 								<button class="site-btn d-block dark mt-3">Znajdź sen</button>
 							</form>
 						</div>
@@ -68,7 +68,7 @@
 			</div>
 			<div class="domain-form-warp">
 				<form class="domain-search-form">
-					<input type="text" placeholder="Enter your website’s name">
+					<input type="text" placeholder="Enter your website’s name" class="autocomplete-input">
 					<button class="site-btn">Search</button>
 				</form>
 				<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis</p>

@@ -4,6 +4,7 @@
   "description": "",
   "author": "",
   "dependencies": {
+    "easy-autocomplete": "^1.3.5",
     "node-sass": "^4.7.2"
   },
   "scripts": {
