@@ -1,29 +1,16 @@
 <?php
 
-if ( ! function_exists( 'es_setup' ) ) :
+/**
+ * Wordpress settings
+ */
+require_once get_template_directory() . '/inc/wordpress-settings.php';
 
-    function es_setup() {
-    
-        /*
-        load_theme_textdomain( 'es', get_template_directory() . '/languages' );
-    
-        add_theme_support( 'automatic-feed-links' );
-    
-        add_theme_support( 'title-tag' );
-    
-        add_theme_support( 'post-thumbnails' );
-        */
-        register_nav_menus(
-            array(
-            'menu-1' => esc_html__( 'Menu główne', 'es' ),
-            )
-        );
-    
-    
+/**
+ * Custom post additions
+ */
+require_once get_template_directory() . '/inc/custom-post-types.php';
 
-    
-        show_admin_bar(false);
-    
-    }
-endif;
-add_action( 'after_setup_theme', 'es_setup' );
+/**
+ * ACF
+ */
+require_once get_template_directory() . '/inc/acf.php';

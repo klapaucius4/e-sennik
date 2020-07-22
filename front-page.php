@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php get_header();
+
+while(have_posts()): the_post();
+?>
 
 	<!-- Hero section -->
 	<section class="hero-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/bg.svg">
@@ -32,8 +35,7 @@
 			<div class="row">
 				<!-- Skills -->
 				<div class="col-lg-6">
-					<h2>Internetowa księga snów</h2>
-					<p>testtt</p>
+					<?php the_content(); ?>
 				</div>
 				<!-- Testimonials -->
 				<div class="col-lg-6">
@@ -45,8 +47,8 @@
 							</div>
 							<div class="ti-author-pic set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/curiosity.svg"></div>
 							<div class="ti-author">
-								<h6>Czy wiesz że...</h6>
-								<span>Ciekawostka</span>
+								<h6><?= __('Czy wiesz że...'); ?></h6>
+								<span><?= __('Ciekawostka'); ?></span>
 							</div>
 						</div>
 						<?php endfor; ?>
@@ -80,5 +82,6 @@
 	<?php get_template_part('template-parts/letters'); ?>
 
 
-
-<?php get_footer();
+<?php
+endwhile;
+get_footer();
