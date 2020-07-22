@@ -110,7 +110,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="<?= get_template_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="<?= get_template_directory_uri(); ?>/js/jquery-ui.min.js"></script>
 	<script src="<?= get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 	<script src="<?= get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
 	<script src="<?= get_template_directory_uri(); ?>/js/circle-progress.min.js"></script>
