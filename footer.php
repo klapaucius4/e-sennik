@@ -1,5 +1,5 @@
 	<!-- Banner section -->
-	<section class="banner-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/banner-bg.jpg">
+	<section class="banner-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/banner-bg.svg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 banner-text text-white">

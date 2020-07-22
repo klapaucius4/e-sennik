@@ -11,7 +11,7 @@
 						<!-- <a href="#" class="site-btn dark">Znajdź swój sen</a> -->
 						<div class="domain-form-warp">
 							<form class="domain-search-form">
-								<input type="text" placeholder="Co Ci się śniło?" class="d-block w-100 search-auto-complete">
+								<input type="text" placeholder="Co Ci się śniło?" class="search-auto-complete d-block w-100">
 								<button class="site-btn d-block dark mt-3">Znajdź sen</button>
 							</form>
 						</div>
@@ -43,7 +43,7 @@
 							<div class="ti-content">
 								<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iacu-lis.Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. iaculis.</p>
 							</div>
-							<div class="ti-author-pic set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/curiosity.png"></div>
+							<div class="ti-author-pic set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/curiosity.svg"></div>
 							<div class="ti-author">
 								<h6>Czy wiesz że...</h6>
 								<span>Ciekawostka</span>
@@ -68,7 +68,7 @@
 			</div>
 			<div class="domain-form-warp">
 				<form class="domain-search-form">
-					<input type="text" placeholder="Enter your website’s name">
+					<input type="text" placeholder="Enter your website’s name" class="search-auto-complete">
 					<button class="site-btn">Search</button>
 				</form>
 				<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis</p>
