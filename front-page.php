@@ -59,7 +59,7 @@ while(have_posts()): the_post();
 	</section>
 	<!-- Skills & testimonials section end -->
 
-
+<?php /*
 	<!-- Domain search section -->
 	<section class="domain-search-section spad set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/blue-bg.svg">
 		<div class="container">
@@ -78,7 +78,7 @@ while(have_posts()): the_post();
 		</div>
 	</section>
 	<!-- Domain search section end -->
-
+*/ ?>
 	<?php get_template_part('template-parts/letters'); ?>
 
 

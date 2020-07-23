@@ -1,3 +1,4 @@
+<?php /*
 	<!-- Banner section -->
 	<section class="banner-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/banner-bg.svg">
 		<div class="container">
@@ -13,6 +14,7 @@
 		</div>
 	</section>
 	<!-- Banner section end -->
+	*/ ?>
 	
 	<!-- Footer top section -->
 	<section class="footer-top-section text-white spad">

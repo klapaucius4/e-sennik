@@ -794,7 +794,8 @@ ol {
 			border-radius: 50%;
 			background: #eef6f9;
 			&.active {
-				background: $color;
+				// background: $color;
+				background: $color-dark;
 			}
 		}
 	}
@@ -934,7 +935,8 @@ ol {
 }
 
 .footer-top-section {
-	background: #200545;
+	// background: #200545;
+	background: #262059;
 }
 
 .footer-widget {
@@ -1006,7 +1008,7 @@ ol {
 ---------------------*/
 
 .footer-section {
-	background: #1b043b;
+	background: $color-dark;
 	overflow: hidden;
 	padding: 20px 0px;
 }

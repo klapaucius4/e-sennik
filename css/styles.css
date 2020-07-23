@@ -629,7 +629,7 @@ ol {
     border-radius: 50%;
     background: #eef6f9; }
     .testimonials-slider .owl-dots .owl-dot.active {
-      background: #e55a99; }
+      background: #1d1752; }
 
 .testimonial-item {
   overflow: hidden; }
@@ -737,7 +737,7 @@ ol {
   opacity: 0.40; }
 
 .footer-top-section {
-  background: #200545; }
+  background: #262059; }
 
 .footer-widget .fw-title {
   font-size: 18px;
@@ -798,7 +798,7 @@ ol {
   Footer section
 ---------------------*/
 .footer-section {
-  background: #1b043b;
+  background: #1d1752;
   overflow: hidden;
   padding: 20px 0px; }
 
