@@ -39,11 +39,21 @@ while(have_posts()): the_post();
 				</div>
 				<!-- Testimonials -->
 				<div class="col-lg-6">
+					<?php
+					$args = array(
+						'post_type' => 'es_curiosity',
+						'post_status' => 'publish',
+						'posts_per_page' => -1
+					);
+					$myQuery = new WP_Query($args);
+
+					if($myQuery->have_posts()):
+					?>
 					<div class="testimonials-slider owl-carousel">
-						<?php for($i=0; $i<=10; $i++): ?>
+						<?php while($myQuery->have_posts()): $myQuery->the_post(); ?>
 						<div class="testimonial-item">
 							<div class="ti-content">
-								<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iacu-lis.Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. iaculis.</p>
+								<p><?= nl2br(get_field('tresc')); ?></p>
 							</div>
 							<div class="ti-author-pic set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/curiosity.svg"></div>
 							<div class="ti-author">
@@ -51,8 +61,9 @@ while(have_posts()): the_post();
 								<span><?= __('Ciekawostka'); ?></span>
 							</div>
 						</div>
-						<?php endfor; ?>
+						<?php endwhile; wp_reset_postdata(); ?>
 					</div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
