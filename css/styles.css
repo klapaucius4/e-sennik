@@ -98,6 +98,9 @@ ol {
 .spad {
   padding-top: 105px;
   padding-bottom: 105px; }
+  .spad__70 {
+    padding-top: 50px;
+    padding-bottom: 50px; }
 
 .text-white h1,
 .text-white h2,
@@ -561,9 +564,16 @@ ol {
   .domain-form-warp p {
     font-size: 12px;
     color: #fff;
-    opacity: 0.26;
+    opacity: 0.4;
     margin-bottom: 0;
     line-height: 1; }
+  .domain-form-warp .site-btn {
+    margin-top: 20px;
+    background: #1d1752; }
+  .domain-form-warp.bottom {
+    text-align: center; }
+    .domain-form-warp.bottom .site-btn {
+      background: #e55a99; }
 
 .domain-search-form {
   margin-bottom: 15px; }
@@ -576,7 +586,8 @@ ol {
     border-radius: 14px;
     display: inline-block;
     padding: 0 31px;
-    margin-right: 5px; }
+    margin-right: 5px;
+    width: 100%; }
   .domain-search-form .site-btn {
     height: 59px;
     min-width: 229px; }

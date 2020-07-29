@@ -11,15 +11,18 @@ while(have_posts()): the_post();
 					<div class="col-lg-6 pr-0">
 						<h1>Sennik Online</h1>
 						<p class="mb-2">Wyszukaj znaczenie swoich snów w naszej internetowej księdze snów.</p>
-						<!-- <a href="#" class="site-btn dark">Znajdź swój sen</a> -->
+						<?php
+							$bottomSearchForm = false;
+							include(locate_template('template-parts/search-form.php'));
+						/*
 						<div class="domain-form-warp">
 							<form class="domain-search-form">
 								<input type="text" placeholder="Co Ci się śniło?" class="search-auto-complete d-block w-100">
 								<button class="site-btn d-block dark mt-3">Znajdź sen</button>
 							</form>
 						</div>
+						*/ ?>
 					</div>
-					<!-- <div class="col-lg-5"></div> -->
 				</div>
 				<div class="hero-rocket">
 					<img src="<?= get_template_directory_uri(); ?>/img/birds.svg" alt="<?= __('Księżyc'); ?>">
@@ -70,26 +73,22 @@ while(have_posts()): the_post();
 	</section>
 	<!-- Skills & testimonials section end -->
 
-<?php /*
 	<!-- Domain search section -->
-	<section class="domain-search-section spad set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/blue-bg.svg">
+	<section class="domain-search-section spad__70 set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/blue-bg.svg">
 		<div class="container">
 			<div class="section-title st-white">
 				<img src="<?= get_template_directory_uri(); ?>/img/section-title-icon-light.svg" alt="">
 				<p>The best out there</p>
 				<h2>See our features</h2>
 			</div>
-			<div class="domain-form-warp">
-				<form class="domain-search-form">
-					<input type="text" placeholder="Enter your website’s name" class="search-auto-complete">
-					<button class="site-btn">Search</button>
-				</form>
-				<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis</p>
-			</div>
+			<?php
+				$bottomSearchForm = true;
+				include(locate_template('template-parts/search-form.php'));
+			?>
 		</div>
 	</section>
 	<!-- Domain search section end -->
-*/ ?>
+	
 	<?php get_template_part('template-parts/letters'); ?>
 
 
