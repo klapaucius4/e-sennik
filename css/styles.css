@@ -388,7 +388,7 @@ ol {
     width: 32px;
     height: 32px;
     color: #fff;
-    background: #491f70;
+    background: #e55a99;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -402,7 +402,8 @@ ol {
     -o-transition: all 0.4s;
     transition: all 0.4s; }
     .social a:hover {
-      background: #e55a99; }
+      color: #1d1752;
+      background: #fff; }
 
 /*------------------
   Header section
@@ -520,6 +521,9 @@ ol {
 /* ----------------
   Features
 ---------------------*/
+.features-section {
+  border-bottom: 1px solid #f3f3f3; }
+
 .feature-item {
   text-align: center;
   margin-bottom: 20px; }
@@ -937,10 +941,10 @@ ol {
   Blog Page
 ---------------------*/
 .blog-post {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #f3f3f3; }
   .blog-post h4 {
-    margin-bottom: 14px; }
+    margin-bottom: 6px; }
     .blog-post h4, .blog-post h4 a {
       color: #1d1752; }
   .blog-post p {
@@ -962,41 +966,45 @@ ol {
   background: #e55a99;
   margin-bottom: 15px; }
 
-.post-metas {
-  margin-bottom: 12px; }
-  .post-metas .post-meta {
-    display: inline-block;
-    font-size: 12px;
-    color: #acacac;
-    font-weight: 600;
-    margin-right: 13px;
-    padding-right: 14px;
-    position: relative; }
-    .post-metas .post-meta a {
-      color: #acacac; }
-      .post-metas .post-meta a:hover {
-        text-decoration: underline; }
-    .post-metas .post-meta:after {
-      position: absolute;
-      content: "|";
-      color: #acacac;
-      font-size: 12px;
-      right: 0;
-      top: 0; }
-    .post-metas .post-meta:last-child {
-      padding-right: 0;
-      margin-right: 0; }
-      .post-metas .post-meta:last-child:after {
-        display: none; }
-
-.site-pagination a {
+.post-metas .post-meta {
   display: inline-block;
-  font-size: 16px;
-  font-weight: 700;
-  color: #1c1c1c;
-  margin-right: 1px; }
-  .site-pagination a.active {
-    color: #e55a99; }
+  font-size: 12px;
+  color: #1d1752;
+  font-weight: 600;
+  margin-right: 13px;
+  padding-right: 14px;
+  position: relative; }
+  .post-metas .post-meta a {
+    font-size: 11px;
+    color: #acacac; }
+    .post-metas .post-meta a:hover {
+      text-decoration: underline; }
+  .post-metas .post-meta:after {
+    position: absolute;
+    content: "|";
+    color: #acacac;
+    font-size: 12px;
+    right: 0;
+    top: 0; }
+  .post-metas .post-meta:last-child {
+    padding-right: 0;
+    margin-right: 0; }
+    .post-metas .post-meta:last-child:after {
+      display: none; }
+
+.site-pagination {
+  margin-top: 60px; }
+  .site-pagination .page-item.active .page-link {
+    background-color: #e55a99;
+    border-color: #e55a99; }
+  .site-pagination a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1c1c1c;
+    margin-right: 1px; }
+    .site-pagination a.active {
+      color: #e55a99; }
 
 .sb-widget {
   margin-bottom: 75px; }

@@ -488,7 +488,7 @@ ol {
 		width: 32px;
 		height: 32px;
 		color: #fff;
-		background: #491f70;
+		background: $color;
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
@@ -502,7 +502,8 @@ ol {
 		-o-transition: all 0.4s;
 		transition: all 0.4s;
 		&:hover {
-			background: $color;
+			color: $color-dark;
+			background: #fff;
 		}
 	}
 }
@@ -654,6 +655,8 @@ ol {
 ---------------------*/
 
 .features-section {
+	// padding-bottom: 0;
+	border-bottom: 1px solid #f3f3f3;
 	.section-title {
 		// margin-bottom: 130px;
 	}
@@ -1184,10 +1187,11 @@ ol {
 ---------------------*/
 
 .blog-post {
-	margin-bottom: 70px;
+	margin-bottom: 20px;
 	border-bottom: 1px solid #f3f3f3;
 	h4 {
-		margin-bottom: 14px;
+		// margin-bottom: 14px;
+		margin-bottom: 6px;
 		&, a {
 			color: $color-dark;
 		}
@@ -1217,16 +1221,17 @@ ol {
 
 .post-metas {
 	// margin-bottom: 30px;
-	margin-bottom: 12px;
+	// margin-bottom: 12px;
 	.post-meta {
 		display: inline-block;
 		font-size: 12px;
-		color: #acacac;
+		color: $color-dark;
 		font-weight: 600;
 		margin-right: 13px;
 		padding-right: 14px;
 		position: relative;
 		a {
+			font-size: 11px;
 			color: #acacac;
 			&:hover {
 				text-decoration: underline;
@@ -1251,6 +1256,11 @@ ol {
 }
 
 .site-pagination {
+	margin-top: 60px;
+	.page-item.active .page-link {
+		background-color: $color;
+		border-color: $color;
+	}
 	a {
 		display: inline-block;
 		font-size: 16px;
