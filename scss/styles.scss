@@ -1188,6 +1188,9 @@ ol {
 	border-bottom: 1px solid #f3f3f3;
 	h4 {
 		margin-bottom: 14px;
+		&, a {
+			color: $color-dark;
+		}
 	}
 	p {
 		font-size: 15px;

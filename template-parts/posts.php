@@ -29,7 +29,7 @@
                 <div class="blog-post">
                     <?php /*<img src="<?= get_template_directory_uri(); ?>/img/blog/1.jpg" alt="" class="post-thumb">*/ ?>
                     <!-- <div class="post-date">Oct 25, 2018</div> -->
-                    <h4><?= the_title(); ?></h4>
+                    <h4><a href="<?php the_permalink(); ?>"><?= the_title(); ?></a></h4>
                     <div class="post-metas">
                         <!-- <div class="post-meta">By Admin</div> -->
                         <div class="post-meta">

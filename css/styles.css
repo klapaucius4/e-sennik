@@ -941,6 +941,8 @@ ol {
   border-bottom: 1px solid #f3f3f3; }
   .blog-post h4 {
     margin-bottom: 14px; }
+    .blog-post h4, .blog-post h4 a {
+      color: #1d1752; }
   .blog-post p {
     font-size: 15px;
     margin-bottom: 0; }
