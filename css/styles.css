@@ -937,7 +937,8 @@ ol {
   Blog Page
 ---------------------*/
 .blog-post {
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  border-bottom: 1px solid #f3f3f3; }
   .blog-post h4 {
     margin-bottom: 14px; }
   .blog-post p {
@@ -960,7 +961,7 @@ ol {
   margin-bottom: 15px; }
 
 .post-metas {
-  margin-bottom: 30px; }
+  margin-bottom: 12px; }
   .post-metas .post-meta {
     display: inline-block;
     font-size: 12px;

@@ -31,11 +31,18 @@
                     <!-- <div class="post-date">Oct 25, 2018</div> -->
                     <h4><?= the_title(); ?></h4>
                     <div class="post-metas">
-                        <div class="post-meta">By Admin</div>
-                        <div class="post-meta">website, tips, seo</div>
-                        <div class="post-meta">3 comments</div>
+                        <!-- <div class="post-meta">By Admin</div> -->
+                        <div class="post-meta">
+                        <?php
+                            if(get_the_tag_list()) {
+                                echo "Tagi: " . get_the_tag_list('',', ','');
+                            }
+                        ?>
+                        </div>
+                        <!-- <div class="post-meta">3 comments</div> -->
                     </div>
                     <?php the_excerpt(); ?>
+                    <a href="#"><div class="post-date mt-2"><?= __('Zobacz więcej'); ?></div></a>
                 </div>
             <?php
             endwhile; wp_reset_postdata();
