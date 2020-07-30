@@ -16,17 +16,30 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-9">
+            <?php
+            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+            $args = array(
+                'post_type' => 'post',
+                'paged' => $paged,
+                'posts_per_page' => get_option( 'posts_per_page' )
+            );
+            $myQuery = new WP_Query($args);
+            while($myQuery->have_posts()): $myQuery->the_post();
+            ?>
                 <div class="blog-post">
-                    <img src="img/blog/1.jpg" alt="" class="post-thumb">
-                    <div class="post-date">Oct 25, 2018</div>
-                    <h4>5 tips to buid your website</h4>
+                    <?php /*<img src="<?= get_template_directory_uri(); ?>/img/blog/1.jpg" alt="" class="post-thumb">*/ ?>
+                    <!-- <div class="post-date">Oct 25, 2018</div> -->
+                    <h4><?= the_title(); ?></h4>
                     <div class="post-metas">
                         <div class="post-meta">By Admin</div>
                         <div class="post-meta">website, tips, seo</div>
                         <div class="post-meta">3 comments</div>
                     </div>
-                    <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Vivamus auctor mi eget odio feugiat, quis aliquet velit ornare. Integer egestas sit amet neque sed elementum. Fusce ut turpis felis. Etiam pretium pharetra augue.</p>
+                    <?php the_excerpt(); ?>
                 </div>
+            <?php
+            endwhile; wp_reset_postdata();
+                /*
                 <div class="blog-post">
                     <img src="img/blog/2.jpg" alt="" class="post-thumb">
                     <div class="post-date">Oct 25, 2018</div>
@@ -49,6 +62,7 @@
                     </div>
                     <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Vivamus auctor mi eget odio feugiat, quis aliquet velit ornare. Integer egestas sit amet neque sed elementum. Fusce ut turpis felis. Etiam pretium pharetra augue.</p>
                 </div>
+                */ ?>
                 <div class="site-pagination">
                     <a href="" class="active">01.</a>
                     <a href="">02.</a>
@@ -60,7 +74,7 @@
                 <!-- widget -->
                 <div class="sb-widget">
                     <a href="" class="add">
-                        <img src="img/add.jpg" alt="#">
+                        <img src="<?= get_template_directory_uri(); ?>/img/add.jpg" alt="#">
                     </a>
                     <form class="sb-search-widget">
                         <input type="text">

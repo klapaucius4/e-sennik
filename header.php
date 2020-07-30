@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html <?php language_attributes(); ?>>
 <head>
-	<title>IT Host - Hosting Template</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Cloud 83 - hosting template ">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="keywords" content="cloud, hosting, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title><?php wp_title(); ?></title>
+
 	<!-- Favicon -->
 	<link href="<?= get_template_directory_uri(); ?>/img/favicon.ico" rel="shortcut icon"/>
 
@@ -45,7 +46,7 @@
 		</div>
 		<div class="nav-warp">
 			<div class="user-panel">
-				<a href="#">Wróżba online</a>
+				<a href="#"><?= __('Wróżba online'); ?></a>
 			</div>
 
 			<?php
