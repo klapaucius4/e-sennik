@@ -18,4 +18,4 @@ jobs:
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Auto pull git repository
-        run: git pull
+        run: echo pwd
