@@ -18,4 +18,4 @@ jobs:
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
     - name: Auto pull git repository
-      run: mkdir test1234
+      run: echo 'dupa'
