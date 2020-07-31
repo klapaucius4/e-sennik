@@ -38,7 +38,7 @@
     </div>
     <!-- widget -->
     <div class="sb-widget">
-        <h2 class="sb-title"><?= __('A może kiedyś śniłeś/aś o...'); ?>:</h2>
+        <h2 class="sb-title"><?= __('A może śniłeś też o...?'); ?>:</h2>
         <?php
         $args = array(
             'post_type' => 'post',
@@ -55,7 +55,7 @@
                 <li><a href="<?= get_the_permalink(); ?>"><?= get_the_title(); ?></a></li>
             <?php endwhile; wp_reset_postdata(); ?>
         </ul>
-        <?php endif; ?> ?>
+        <?php endif; ?>
     </div>
     <div class="sb-widget">
         <h2 class="sb-title">Tag</h2>
