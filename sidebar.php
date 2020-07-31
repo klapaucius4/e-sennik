@@ -26,7 +26,7 @@
         <div class="sb-latest-post-widget">
             <?php while($myQuery->have_posts()): $myQuery->the_post(); ?>
             <div class="lp-item">
-                <div class="lp-thumb set-bg" data-setbg="<?= get_template_directory(); ?>/img/footer-thumb/1.jpg"></div>
+                <div class="lp-thumb set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/footer-thumb/1.jpg"></div>
                 <div class="lp-content">
                     <h6><?= get_the_title(); ?></h6>
                     <span><?= get_the_date(); ?></span>
