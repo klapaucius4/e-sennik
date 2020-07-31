@@ -17,5 +17,5 @@ jobs:
     - uses: actions/labeler@v2
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-    - name: Auto pull git reposityory
-      run: 'mkdir test1234'
+    - name: Auto pull git repository
+      run: mkdir test1234
