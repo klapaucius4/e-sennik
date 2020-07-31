@@ -10,30 +10,31 @@
     </div>
     <!-- widget -->
     <div class="sb-widget">
-        <h2 class="sb-title">Latest Posts</h2>
+        <h2 class="sb-title"><?= __('Ostatnio dodane sny'); ?></h2>
+        <?php
+        $args = array(
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'posts_per_page' => 6,
+            'orderby' => 'date',
+            'order' => 'DESC'
+        );
+        $myQuery = new WP_Query($args);
+
+        if($myQuery->have_posts()):
+        ?>
         <div class="sb-latest-post-widget">
+            <?php while($myQuery->have_posts()): $myQuery->the_post(); ?>
             <div class="lp-item">
-                <div class="lp-thumb set-bg" data-setbg="img/footer-thumb/1.jpg"></div>
+                <div class="lp-thumb set-bg" data-setbg="<?= get_template_directory(); ?>/img/footer-thumb/1.jpg"></div>
                 <div class="lp-content">
-                    <h6>Web Hosting for everyone</h6>
-                    <span>Oct 21, 2018</span>
+                    <h6><?= get_the_title(); ?></h6>
+                    <span><?= get_the_date(); ?></span>
                 </div>
             </div>
-            <div class="lp-item">
-                <div class="lp-thumb set-bg" data-setbg="img/footer-thumb/2.jpg"></div>
-                <div class="lp-content">
-                    <h6>Web Hosting for everyone</h6>
-                    <span>Oct 21, 2018</span>
-                </div>
-            </div>
-            <div class="lp-item">
-                <div class="lp-thumb set-bg" data-setbg="img/footer-thumb/3.jpg"></div>
-                <div class="lp-content">
-                    <h6>Web Hosting for everyone</h6>
-                    <span>Oct 21, 2018</span>
-                </div>
-            </div>
+            <?php endwhile; wp_reset_postdata(); ?>
         </div>
+        <?php endif; ?>
     </div>
     <!-- widget -->
     <div class="sb-widget">
