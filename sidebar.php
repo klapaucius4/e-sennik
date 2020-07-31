@@ -38,14 +38,24 @@
     </div>
     <!-- widget -->
     <div class="sb-widget">
-        <h2 class="sb-title"><?= __('Ostatnio dodane sny'); ?>:</h2>
-        
+        <h2 class="sb-title"><?= __('A może kiedyś śniłeś/aś o...'); ?>:</h2>
+        <?php
+        $args = array(
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'posts_per_page' => 12,
+            'orderby' => 'rand',
+        );
+        $myQuery = new WP_Query($args);
+
+        if($myQuery->have_posts()):
+        ?>
         <ul>
-            <li><a href="">Development</a></li>
-            <li><a href="">SEO</a></li>
-            <li><a href="">Tips & Triks</a></li>
-            <li><a href="">Hosting</a></li>
+            <?php while($myQuery->have_posts()): $myQuery->the_post(); ?>
+                <li><a href="<?= get_the_permalink(); ?>"><?= get_the_title(); ?></a></li>
+            <?php endwhile; wp_reset_postdata(); ?>
         </ul>
+        <?php endif; ?> ?>
     </div>
     <div class="sb-widget">
         <h2 class="sb-title">Tag</h2>
