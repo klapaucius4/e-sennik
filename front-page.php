@@ -1,6 +1,6 @@
 <?php get_header();
 
-while(have_posts()): the_post();
+// while(have_posts()): the_post();
 ?>
 
 	<!-- Hero section -->
@@ -93,5 +93,5 @@ while(have_posts()): the_post();
 
 
 <?php
-endwhile;
+// endwhile;
 get_footer();
