@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 function bootstrap_pagination( \WP_Query $wp_query = null, $echo = true, $params = [] ) {
     if ( null === $wp_query ) {

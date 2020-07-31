@@ -1,3 +1,4 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 <!-- sidebar -->
 <div class="col-lg-3 col-md-5 col-sm-8 sidebar">
     <!-- widget -->

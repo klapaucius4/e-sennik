@@ -1,4 +1,7 @@
-<?php /*
+<?php
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+	/*
 	<!-- Banner section -->
 	<section class="banner-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/banner-bg.svg">
 		<div class="container">
@@ -119,7 +122,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="<?= get_template_directory_uri(); ?>/js/main.js"></script>
 
     <?php wp_footer(); ?>
-	
+
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46121409-8"></script>
