@@ -9,7 +9,7 @@
 	<title><?php wp_title(); ?></title>
 
 	<!-- Favicon -->
-	<link rel="icon" type="image/svg+xml" href="<?= get_template_directory_uri(); ?>/img/favicon.svg">
+	<link href="<?= get_template_directory_uri(); ?>/img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
