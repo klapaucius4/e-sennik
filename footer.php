@@ -119,5 +119,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="<?= get_template_directory_uri(); ?>/js/main.js"></script>
 
     <?php wp_footer(); ?>
+	
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46121409-8"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-46121409-8');
+	</script>
+	<!-- The END Google Analytics -->
+
 	</body>
 </html>
