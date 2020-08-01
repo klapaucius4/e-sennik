@@ -1,9 +1,10 @@
 <!-- Page Top section -->
 <section class="page-top-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/blue-bg.svg">
     <div class="container">
-        <h2>Blog</h2>
+        <h2><?= get_the_title(); ?></h2>
         <div class="site-breadcrumb">
-            <a href="home">Home</a> / <span>Blog</span>
+            <?php $frontpageId = get_option( 'page_on_front' ); ?>
+            <a href="<?= get_the_permalink($frontpageId); ?>"><?= get_the_title($frontpageId);  ?></a> / <span><?= get_the_title(); ?></span>
         </div>
     </div>
 </section>
