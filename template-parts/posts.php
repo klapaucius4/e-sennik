@@ -1,7 +1,7 @@
 <!-- Page Top section -->
 <section class="page-top-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/blue-bg.svg">
     <div class="container">
-        <h2 class="mb-3"><?php
+        <h2 class="mb-2"><?php
         $frontpageId = get_option( 'page_on_front' );
         $blogId = get_option('page_for_posts');
 
