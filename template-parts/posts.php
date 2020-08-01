@@ -2,17 +2,20 @@
 <section class="page-top-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/blue-bg.svg">
     <div class="container">
         <h2><?php
+        $frontpageId = get_option( 'page_on_front' );
+        $blogId = get_option('page_for_posts');
+
         if(is_archive()){
             echo post_type_archive_title( '', false );
+        }elseif(is_home()){
+            echo get_the_title($blogId);
+        }elseif(is_single()){
+            echo get_the_title();
         }else{
             echo get_the_title();
         }
         ?></h2>
         <div class="site-breadcrumb">
-            <?php
-                $frontpageId = get_option( 'page_on_front' );
-                $blogId = get_option('page_for_posts');
-            ?>
             <a href="<?= get_the_permalink($frontpageId); ?>"><?= get_the_title($frontpageId);  ?></a>
             <?php if(is_home()): ?> / <a href="#"><?= get_the_title($blogId); ?></a><?php endif; ?>
             <?php if(is_archive()): ?> / <a href="#"><?= post_type_archive_title( '', false ); ?></a><?php endif; ?>
