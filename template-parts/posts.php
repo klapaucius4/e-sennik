@@ -4,7 +4,9 @@
         <h2><?= get_the_title(); ?></h2>
         <div class="site-breadcrumb">
             <?php $frontpageId = get_option( 'page_on_front' ); ?>
-            <a href="<?= get_the_permalink($frontpageId); ?>"><?= get_the_title($frontpageId);  ?></a> / <span><?= get_the_title(); ?></span>
+            <a href="<?= get_the_permalink($frontpageId); ?>"><?= get_the_title($frontpageId);  ?></a>
+            <?php if(is_archive()): ?> / <a href="#"><?= get_the_title(); ?></a><?php endif; ?>
+            <?php if(is_single()): ?> / <a href="#"><?= get_the_title(); ?></a><?php endif; ?>
         </div>
     </div>
 </section>
