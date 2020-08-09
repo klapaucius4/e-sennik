@@ -71,7 +71,7 @@
                         <!-- <div class="post-meta">3 comments</div> -->
                     </div>
                     <?php the_excerpt(); ?>
-                    <a href="#"><div class="post-date mt-2"><?= __('Zobacz więcej'); ?></div></a>
+                    <a href="<?= get_the_permalink(); ?>"><div class="post-date mt-2"><?= __('Zobacz więcej'); ?></div></a>
                 </div>
             <?php endwhile; wp_reset_postdata(); wp_reset_query(); ?>
 

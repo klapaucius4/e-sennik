@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-lg-9">
                 <div class="blog-post">
-                    <?php /*<img src="<?= get_template_directory_uri(); ?>/img/blog/1.jpg" alt="" class="post-thumb">*/ ?>
+                    <img src="<?= get_template_directory_uri(); ?>/img/blog/1.jpg" alt="" class="post-thumb">
                     <!-- <div class="post-date">Oct 25, 2018</div> -->
                     <h4><a href="<?php the_permalink(); ?>"><?= the_title(); ?></a></h4>
                     <div class="post-metas">
@@ -27,7 +27,6 @@
                         <!-- <div class="post-meta">3 comments</div> -->
                     </div>
                     <?php the_content(); ?>
-                    <a href="#"><div class="post-date mt-2"><?= __('Zobacz więcej'); ?></div></a>
                 </div>
             </div>
             <?php get_sidebar('sidebar'); ?>
