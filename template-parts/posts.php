@@ -34,7 +34,7 @@
     <div class="container">
         <div class="section-title">
 			<img src="http://e-sennik2.localhost/wp-content/themes/e-sennik/img/section-title-icon-light.svg" alt="">
-            <?php if($object && $object->slug == 'sny'): ?>
+            <?php if($object && $parentCategory = get_term_by('id', $object->parent, $object->taxonomy) && $parentCategory->slug == 'sen'): ?>
 			<p><?= __('Sny na literę'); ?></p>
 			<h2>"<?= $object->name; ?>"</h2>
             <?php endif; ?>
