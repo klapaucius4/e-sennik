@@ -43,7 +43,7 @@
                     <h2><?= $category->name; ?></h2>
                 <?php endif; ?>
             <?php else: ?>
-                <h2><?= get_the_title(); ?></h2>
+                <h2>aaa<?= get_the_title(); ?></h2>
             <?php endif; ?>
 		</div>
         <div class="row">
