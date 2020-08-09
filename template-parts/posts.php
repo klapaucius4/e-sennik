@@ -5,6 +5,8 @@
         $frontpageId = get_option( 'page_on_front' );
         $blogId = get_option('page_for_posts');
 
+        $object = get_queried_object();
+
         if(is_archive()){
             echo post_type_archive_title( '', false );
         }elseif(is_home()){
@@ -32,8 +34,10 @@
     <div class="container">
         <div class="section-title">
 			<img src="http://e-sennik2.localhost/wp-content/themes/e-sennik/img/section-title-icon-light.svg" alt="">
-			<p>Sny na literę</p>
-			<h2>"S"</h2>
+            <?php if($object && $object->slug == 'sny'): ?>
+			<p><?= __('Sny na literę'); ?></p>
+			<h2>"<?= $object->name; ?>"</h2>
+            <?php endif; ?>
 		</div>
         <div class="row">
             <div class="col-lg-9">
