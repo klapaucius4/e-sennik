@@ -38,28 +38,15 @@
                 $parentCategory = get_term_by('id', $category->parent, $category->taxonomy);
                 if($parentCategory && $parentCategory->slug == 'sen'): ?>
                     <p><?= __('Sny na literę'); ?></p>
+                    <h2><q><?= $category->name; ?></q></h2>
+                <?php else: ?>
+                    <h2><?= $category->name; ?></h2>
                 <?php endif; ?>
-                <h2><?= $category->name; ?></h2>
             <?php endif; ?>
 		</div>
         <div class="row">
             <div class="col-lg-9">
             <?php
-            // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-            // $args = array(
-            //     'post_type' => 'post',
-            //     'paged' => $paged,
-            //     'posts_per_page' => get_option( 'posts_per_page' )
-            // );
-            // $myQuery = new WP_Query($args);
-
-
-            // query_posts(
-            //     array(
-            //         'order' => 'ASC',
-            //         'orderby' => 'title',
-            //     )
-            // );
             while(have_posts()): the_post();
             ?>
                 <div class="blog-post">
