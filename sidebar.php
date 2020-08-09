@@ -26,11 +26,13 @@
         <div class="sb-latest-post-widget">
             <?php while($myQuery->have_posts()): $myQuery->the_post(); ?>
             <div class="lp-item">
-                <div class="lp-thumb set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/footer-thumb/1.jpg"></div>
-                <div class="lp-content">
-                    <h6><?= get_the_title(); ?></h6>
-                    <span><?= get_the_date(); ?></span>
-                </div>
+                <a href="<?= get_the_permalink(); ?>">
+                    <div class="lp-thumb set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/footer-thumb/1.jpg"></div>
+                    <div class="lp-content">
+                        <h6><?= get_the_title(); ?></h6>
+                        <span><?= get_the_date(); ?></span>
+                    </div>
+                </a>
             </div>
             <?php endwhile; wp_reset_postdata(); ?>
         </div>
@@ -58,7 +60,7 @@
         <?php endif; ?>
     </div>
     <div class="sb-widget">
-        <h2 class="sb-title">Tag</h2>
+        <h2 class="sb-title"><?= __('Tagi'); ?></h2>
         <div class="sb-tag-widget">
             <?php wp_tag_cloud(); ?>
             <!-- <a href="">development</a>
