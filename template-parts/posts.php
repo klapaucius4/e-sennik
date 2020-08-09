@@ -45,7 +45,7 @@
                     <h2><?= $category->name; ?></h2>
                 <?php endif; ?>
             <?php elseif(is_home()): ?>
-                <h2><?= get_the_title(get_option('page_for_posts', true)); ?></h2>
+                <h2><?= get_the_title(get_option('page_for_posts')); ?></h2>
             <?php else: ?>
                 <h2><?= get_the_title(); ?></h2>
             <?php endif; ?>
