@@ -26,7 +26,7 @@
                         </div>
                         <!-- <div class="post-meta">3 comments</div> -->
                     </div>
-                    <?php the_excerpt(); ?>
+                    <?php the_content(); ?>
                     <a href="#"><div class="post-date mt-2"><?= __('Zobacz więcej'); ?></div></a>
                 </div>
             </div>
