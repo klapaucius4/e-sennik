@@ -74,7 +74,7 @@
     </div>
     <div class="sb-widget">
         <a href="" class="add">
-            <img src="<?= get_template_directory_uri(); ?>/img/add.jpg" alt="#">
+            <!-- <img src="<?= get_template_directory_uri(); ?>/img/add.jpg" alt="#"> -->
         </a>
     </div>
 </div>
