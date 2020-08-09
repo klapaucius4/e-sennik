@@ -5,7 +5,7 @@
         $frontpageId = get_option( 'page_on_front' );
         $blogId = get_option('page_for_posts');
 
-        $object = get_queried_object();
+        $category = get_queried_object();
 
         if(is_archive()){
             echo post_type_archive_title( '', false );
@@ -34,9 +34,13 @@
     <div class="container">
         <div class="section-title">
 			<img src="http://e-sennik2.localhost/wp-content/themes/e-sennik/img/section-title-icon-light.svg" alt="">
-            <?php if($object && $parentCategory = get_term_by('id', $object->parent, $object->taxonomy) && $parentCategory->slug == 'sen'): ?>
-			<p><?= __('Sny na literę'); ?></p>
-			<h2>"<?= $object->name; ?>"</h2>
+            <?php
+            if($category):
+                $parentCategory = get_term_by('id', $category->parent, $category->taxonomy);
+                if($parentCategory && $parentCategory->slug == 'sen'): ?>
+                <p><?= __('Sny na literę'); ?></p>
+                <h2>"<?= $category->name; ?>"</h2>
+                <?php endif; ?>
             <?php endif; ?>
 		</div>
         <div class="row">
