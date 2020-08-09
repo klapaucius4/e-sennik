@@ -60,7 +60,8 @@
     <div class="sb-widget">
         <h2 class="sb-title">Tag</h2>
         <div class="sb-tag-widget">
-            <a href="">development</a>
+            <?php wp_tag_cloud(); ?>
+            <!-- <a href="">development</a>
             <a href="" class="big-tag">SEO</a>
             <a href="">website</a>
             <a href="">hosting</a>
@@ -68,7 +69,7 @@
             <a href="">coding</a>
             <a href="">video</a>
             <a href="">marketing</a>
-            <a href="">analizing</a>
+            <a href="">analizing</a> -->
         </div>
     </div>
     <div class="sb-widget">
