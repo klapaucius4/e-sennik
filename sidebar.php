@@ -27,7 +27,7 @@
             <?php while($myQuery->have_posts()): $myQuery->the_post(); ?>
             <div class="lp-item">
                 <a href="<?= get_the_permalink(); ?>">
-                    <div class="lp-thumb set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/footer-thumb/1.jpg"></div>
+                    <div class="lp-thumb set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/cloud-dream.svg"></div>
                     <div class="lp-content">
                         <h6><?= get_the_title(); ?></h6>
                         <span><?= get_the_date(); ?></span>
