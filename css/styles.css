@@ -1007,6 +1007,8 @@ ol {
       color: #e55a99; }
     .site-pagination a:hover {
       color: #e55a99; }
+    .site-pagination a:focus {
+      box-shadow: 0 0 0 0.2rem rgba(229, 90, 153, 0.25); }
 
 .sb-widget {
   margin-bottom: 75px; }

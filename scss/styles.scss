@@ -1273,6 +1273,9 @@ ol {
 		&:hover {
 			color: $color;
 		}
+		&:focus {
+			box-shadow: 0 0 0 0.2rem rgba(229, 90, 153, .25);
+		}
 	}
 }
 
