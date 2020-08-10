@@ -5,11 +5,14 @@
     <div class="container">
         <div class="section-title">
 			<img src="http://e-sennik2.localhost/wp-content/themes/e-sennik/img/section-title-icon-light.svg" alt="">
-            <?php if($category):
-                $parentCategory = get_term_by('id', $category->parent, $category->taxonomy);
-                if($parentCategory && $parentCategory->slug == 'sen'): ?>
-                    <p><?= __('Sny na literę'); ?></p>
-                    <h2><q><?= $category->name; ?></q></h2>
+            <?php
+                $category = get_queried_object();
+                var_dump($category);
+                if($category):
+                    $parentCategory = get_term_by('id', $category->parent, $category->taxonomy);
+                    if($parentCategory && $parentCategory->slug == 'sen'): ?>
+                        <p><?= __('Sny na literę'); ?></p>
+                        <h2><q><?= $category->name; ?></q></h2>
                 <?php else: ?>
                     <h2><?= $category->name; ?></h2>
                 <?php endif; ?>
