@@ -6,15 +6,14 @@
         <div class="section-title">
 			<img src="http://e-sennik2.localhost/wp-content/themes/e-sennik/img/section-title-icon-light.svg" alt="">
             <?php
-                $category = get_queried_object();
-                var_dump($category);
-                if($category):
-                    $parentCategory = get_term_by('id', $category->parent, $category->taxonomy);
-                    if($parentCategory && $parentCategory->slug == 'sen'): ?>
+                $term = get_queried_object();
+                if($term->taxonomy):
+                    $parentTerm = get_term_by('id', $term->parent, $term->taxonomy);
+                    if($parentTerm && $parentTerm->slug == 'sen'): ?>
                         <p><?= __('Sny na literę'); ?></p>
-                        <h2><q><?= $category->name; ?></q></h2>
+                        <h2><q><?= $term->name; ?></q></h2>
                 <?php else: ?>
-                    <h2><?= $category->name; ?></h2>
+                    <h2><?= $term->name; ?></h2>
                 <?php endif; ?>
             <?php elseif(is_home()): ?>
                 <h2><?= get_the_title(get_option('page_for_posts')); ?></h2>
