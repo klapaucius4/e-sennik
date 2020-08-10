@@ -1270,6 +1270,9 @@ ol {
 		&.active {
 			color: $color;
 		}
+		&:hover {
+			color: $color;
+		}
 	}
 }
 

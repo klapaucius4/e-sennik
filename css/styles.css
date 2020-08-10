@@ -1005,6 +1005,8 @@ ol {
     margin-right: 1px; }
     .site-pagination a.active {
       color: #e55a99; }
+    .site-pagination a:hover {
+      color: #e55a99; }
 
 .sb-widget {
   margin-bottom: 75px; }
