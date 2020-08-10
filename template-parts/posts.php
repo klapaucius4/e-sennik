@@ -4,7 +4,7 @@
 <section class="blog-section spad">
     <div class="container">
         <div class="section-title">
-			<img src="http://e-sennik2.localhost/wp-content/themes/e-sennik/img/section-title-icon-light.svg" alt="">
+			<img src="<?= get_template_directory_uri(); ?>/img/section-title-icon-light.svg" alt="">
             <?php
                 $term = get_queried_object();
                 if($term->taxonomy):
