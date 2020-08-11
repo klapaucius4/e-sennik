@@ -115,6 +115,12 @@ ol {
   color: #fff; }
 
 /*---------------------
+  RWD begin
+-----------------------*/
+/*---------------------
+  Commom end
+-----------------------*/
+/*---------------------
   Commom elements
 -----------------------*/
 .bg-gradient, .site-btn.sb-gradient, .accordion-area .panel-link,
@@ -419,6 +425,15 @@ ol {
   margin-left: 50px; }
   .site-logo img {
     width: 360px; }
+    @media (max-width: 991.98px) {
+      .site-logo img {
+        width: 320px; } }
+    @media (max-width: 767.98px) {
+      .site-logo img {
+        width: 260px; } }
+    @media (max-width: 575.98px) {
+      .site-logo img {
+        width: 200px; } }
 
 .nav-switch {
   display: none; }
@@ -574,6 +589,9 @@ ol {
   .domain-form-warp .site-btn {
     margin-top: 20px;
     background: #1d1752; }
+    @media (max-width: 1199.98px) {
+      .domain-form-warp .site-btn {
+        background: #e55a99; } }
   .domain-form-warp.bottom {
     text-align: center; }
     .domain-form-warp.bottom .site-btn {
