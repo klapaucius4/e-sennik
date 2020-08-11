@@ -38,26 +38,37 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="footer-widget">
-						<h4 class="fw-title">Usefull Links</h4>
+						<h4 class="fw-title"><?= __('Mapa witryny'); ?></h4>
 						<div class="row">
 							<div class="col-sm-6">
-								<ul>
+								<?php
+								if(has_nav_menu('menu-1')):
+									wp_nav_menu(
+										array(
+											'menu'   => '',
+											'container' => false,
+											'menu_class' => ''
+										)
+									);
+								endif;
+								?>
+								<!-- <ul>
 									<li><a href="">Web Hosting</a></li>
 									<li><a href="">WordPress Hosting</a></li>
 									<li><a href="">VPS Hosting</a></li>
 									<li><a href="">Cloud Server</a></li>
 									<li><a href="">Reseller Package</a></li>
 									<li><a href="">Dedicated Hosting</a></li>
-								</ul>
+								</ul> -->
 							</div>
-							<div class="col-sm-6">
+							<!-- <div class="col-sm-6">
 								<ul>
 									<li><a href="">Web Hosting</a></li>
 									<li><a href="">WordPress Hosting</a></li>
 									<li><a href="">VPS Hosting</a></li>
 									<li><a href="">Cloud Server</a></li>
 								</ul>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -98,17 +109,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
-			<?php
-			if(has_nav_menu('menu-1')):
-				wp_nav_menu(
-					array(
-						'menu'   => 'menu-1',
-						'container' => false,
-						'menu_class' => 'footer-menu'
-					)
-				);
-			endif;
-			?>
 			<div class="copyright">
 			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 			Copyright &copy; 2014 - <script>document.write(new Date().getFullYear());</script> All rights reserved
