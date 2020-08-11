@@ -1,5 +1,3 @@
-<?php get_template_part('template-parts/letters'); ?>
-
 <!-- Blog posts section -->
 <section class="blog-section spad">
     <div class="container">
@@ -60,3 +58,5 @@
     </div>
 </section>
 <!-- Footer top section end -->
+
+<?php get_template_part('template-parts/letters'); ?>

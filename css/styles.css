@@ -972,6 +972,12 @@ ol {
   .blog-post p {
     font-size: 15px;
     margin-bottom: 0; }
+  .blog-post .post-metas {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+    .blog-post .post-metas .post-meta a {
+      font-size: 14px;
+      margin-left: 4px; }
 
 .post-thumb {
   border-radius: 13px;
@@ -998,7 +1004,7 @@ ol {
   position: relative; }
   .post-metas .post-meta a {
     font-size: 11px;
-    color: #acacac; }
+    color: #e55a99; }
     .post-metas .post-meta a:hover {
       text-decoration: underline; }
   .post-metas .post-meta:after {

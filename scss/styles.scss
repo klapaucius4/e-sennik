@@ -1277,6 +1277,16 @@ $screen-xl-min: 1200px;
 		font-size: 15px;
 		margin-bottom: 0;
 	}
+	.post-metas {
+		margin-top: 10px;
+		margin-bottom: 20px;
+		.post-meta {
+			a {
+				font-size: 14px;
+				margin-left: 4px;
+			}
+		}
+	}
 }
 
 .post-thumb {
@@ -1309,7 +1319,8 @@ $screen-xl-min: 1200px;
 		position: relative;
 		a {
 			font-size: 11px;
-			color: #acacac;
+			// color: #acacac;
+			color: $color;
 			&:hover {
 				text-decoration: underline;
 			}

@@ -45,9 +45,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 								if(has_nav_menu('menu-1')):
 									wp_nav_menu(
 										array(
-											'menu'   => '',
+											'menu'   => 'menu-1',
 											'container' => false,
-											'menu_class' => ''
+											'menu_class' => null,
+											'menu_id' => null
 										)
 									);
 								endif;
@@ -74,30 +75,33 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				</div>
 				<div class="col-lg-4  col-md-6">
 					<div class="footer-widget">
-						<h4 class="fw-title">Latest Posts</h4>
+						<h4 class="fw-title"><?= __('Ostatnie artykuły'); ?></h4>
+						<?php
+						$dreamCategory = get_term_by('slug', 'sen', 'category');
+						$args = array(
+							'post_type' => 'post',
+							'posts_per_page' => '3',
+							'post_status' => 'publish',
+							'orderby' => 'date',
+							'order' => 'DESC',
+							'category__not_in' => $dreamCategory->term_id
+						);
+						$the_query = new WP_Query( $args );
+
+						if($the_query->have_posts()):
+						?>
 						<div class="fw-latest-post-widget">
+							<?php while ( $the_query->have_posts() ): $the_query->the_post(); ?>
 							<div class="lp-item">
-								<div class="lp-thumb set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/footer-thumb/1.jpg"></div>
+								<div class="lp-thumb set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/cloud-dream.svg"></div>
 								<div class="lp-content">
-									<h6>Web Hosting for everyone</h6>
-									<span>Oct 21, 2018</span>
+									<h6><?= get_the_title(); ?></h6>
+									<span><?= get_the_date(); ?></span>
 								</div>
 							</div>
-							<div class="lp-item">
-								<div class="lp-thumb set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/footer-thumb/2.jpg"></div>
-								<div class="lp-content">
-									<h6>Web Hosting for everyone</h6>
-									<span>Oct 21, 2018</span>
-								</div>
-							</div>
-							<div class="lp-item">
-								<div class="lp-thumb set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/footer-thumb/3.jpg"></div>
-								<div class="lp-content">
-									<h6>Web Hosting for everyone</h6>
-									<span>Oct 21, 2018</span>
-								</div>
-							</div>
+							<?php endwhile; wp_reset_postdata(); ?>
 						</div>
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>

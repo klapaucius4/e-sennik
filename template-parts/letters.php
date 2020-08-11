@@ -16,7 +16,7 @@
 			);
 			?>
 			<?php foreach($alphabet as $letter): ?>
-			<div class="col-lg-1 col-md-2 col-sm-3 col-4 feature-item">
+			<div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-3 feature-item">
 				<a href="<?= get_term_link($letter->term_id, $letter->taxonomy); ?>">
 					<div class="ft-icon"><?= $letter->name; ?></div>
 				</a>
