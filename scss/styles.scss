@@ -1133,6 +1133,11 @@ $screen-xl-min: 1200px;
 .page-top-section {
 	height: 404px;
 	padding-top: 215px;
+	@include md {
+		height: 200px;
+    	padding-top: 130px;
+	}
+	
 	h2 {
 		color: #fff;
 	}
