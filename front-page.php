@@ -17,14 +17,7 @@ get_header();
 						<?php
 							$bottomSearchForm = false;
 							include(locate_template('template-parts/search-form.php'));
-						/*
-						<div class="domain-form-warp">
-							<form class="domain-search-form">
-								<input type="text" placeholder="Co Ci się śniło?" class="search-auto-complete d-block w-100">
-								<button class="site-btn d-block dark mt-3">Znajdź sen</button>
-							</form>
-						</div>
-						*/ ?>
+						?>
 					</div>
 				</div>
 				<div class="hero-rocket">
