@@ -13,7 +13,7 @@
             <div class="col-lg-9">
                 <div class="blog-post">
                     <!-- <img src="<?= get_template_directory_uri(); ?>/img/blog/1.jpg" alt="" class="post-thumb"> -->
-                    <!-- <div class="post-date">Oct 25, 2018</div> -->
+                    <div class="post-date"><?= get_the_date(); ?></div>
                     <h4><a href="<?php the_permalink(); ?>"><?= the_title(); ?></a></h4>
                     <div class="post-metas">
                         <!-- <div class="post-meta">By Admin</div> -->
