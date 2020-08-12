@@ -9,7 +9,7 @@
 					<p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum</p>
 				</div>
 				<div class="col-lg-4 text-left text-lg-right">
-					<a href="" class="site-btn">Odbierz darmowe pytanie do wróżki!</a>
+					<a href="#" class="site-btn">Odbierz darmowe pytanie do wróżki!</a>
 				</div>
 			</div>
 		</div>
@@ -110,10 +110,7 @@
 	<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
-			<div class="copyright">
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			Copyright &copy; 2014 - <script>document.write(new Date().getFullYear());</script> All rights reserved
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+			<div class="copyright">Copyright &copy; 2014 - <script>document.write(new Date().getFullYear());</script> All rights reserved</div>
 		</div>
 	</footer>
 	<!-- Footer top section end -->
