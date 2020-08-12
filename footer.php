@@ -53,11 +53,13 @@
 						<div class="fw-latest-post-widget">
 							<?php while ( $the_query->have_posts() ): $the_query->the_post(); ?>
 							<div class="lp-item">
-								<div class="lp-thumb set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/cloud-dream.svg"></div>
-								<div class="lp-content">
-									<h6><?= get_the_title(); ?></h6>
-									<span><?= get_the_date(); ?></span>
-								</div>
+								<a href="<?= get_permalink(); ?>">
+									<div class="lp-thumb set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/cloud-dream.svg"></div>
+									<div class="lp-content">
+										<h6><?= get_the_title(); ?></h6>
+										<span><?= get_the_date(); ?></span>
+									</div>
+								</a>
 							</div>
 							<?php endwhile; wp_reset_postdata(); ?>
 						</div>
