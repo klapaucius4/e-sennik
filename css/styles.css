@@ -427,13 +427,13 @@ ol {
     width: 360px; }
     @media (max-width: 1199.98px) {
       .site-logo img {
-        width: 300px; } }
+        width: 260px; } }
     @media (max-width: 991.98px) {
       .site-logo img {
-        width: 280px; } }
+        width: 240px; } }
     @media (max-width: 767.98px) {
       .site-logo img {
-        width: 240px; } }
+        width: 220px; } }
     @media (max-width: 575.98px) {
       .site-logo img {
         width: 200px; } }
