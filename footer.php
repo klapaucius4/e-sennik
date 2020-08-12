@@ -9,7 +9,7 @@
 					<p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum</p>
 				</div>
 				<div class="col-lg-4 text-left text-lg-right">
-					<a href="#" class="site-btn">Odbierz darmowe pytanie do wróżki!</a>
+					<a href="<?= get_field('wrozba_link', get_option( 'page_on_front' ), '#'); ?>" class="site-btn"><?= __('Odbierz darmowe pytanie do wróżki!'); ?></a>
 				</div>
 			</div>
 		</div>
