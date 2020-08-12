@@ -52,10 +52,10 @@
 			</div>
 
 			<?php
-			if(has_nav_menu('menu-1')):
+			if(has_nav_menu('menu_1')):
 				wp_nav_menu(
 					array(
-						'menu'   => 'menu-1',
+						'menu'   => 'menu_1',
 						'container' => false,
 						'menu_class' => 'main-menu'
 					)

@@ -72,10 +72,10 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<?php
-								if(has_nav_menu('menu-2')):
+								if(has_nav_menu('menu_2')):
 									wp_nav_menu(
 										array(
-											'menu'   => 'menu-2',
+											'menu'   => 'menu_2',
 											'container' => false,
 											'menu_class' => null,
 											'menu_id' => null

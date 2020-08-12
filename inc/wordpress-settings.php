@@ -16,8 +16,8 @@ if ( ! function_exists( 'es_setup' ) ) :
         */
         register_nav_menus(
             array(
-            'menu-1' => esc_html__( 'Menu główne', 'es' ),
-            'menu-2' => esc_html__( 'Menu stopka', 'es' ),
+            'menu_1' => esc_html__( 'Menu główne', 'es' ),
+            'menu_2' => esc_html__( 'Menu stopka', 'es' ),
             )
         );
     
