@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-lg-8 banner-text text-white">
 					<h3><?= __('Chciałbyś porozmawiać z wróżką lub wróżbitą?'); ?></h3>
-					<p><?= __(); ?></p>
+					<p><?= __('Lorem ipsum'); ?></p>
 				</div>
 				<div class="col-lg-4 text-left text-lg-right">
 					<a href="<?= get_field('wrozba_link', get_option( 'page_on_front' ))?:'#'; ?>" class="site-btn"><?= __('Odbierz darmowe pytanie do wróżki!'); ?></a>
@@ -75,7 +75,7 @@
 								if(has_nav_menu('menu-2')):
 									wp_nav_menu(
 										array(
-											'menu'   => 'menu-1',
+											'menu'   => 'menu-2',
 											'container' => false,
 											'menu_class' => null,
 											'menu_id' => null
