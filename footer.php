@@ -5,8 +5,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 banner-text text-white">
-					<h3>Chciałbyś porozmawiać z wróżką lub wróżbitą?</h3>
-					<p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+					<h3><?= __('Chciałbyś porozmawiać z wróżką lub wróżbitą?'); ?></h3>
+					<p><?= __(); ?></p>
 				</div>
 				<div class="col-lg-4 text-left text-lg-right">
 					<a href="<?= get_field('wrozba_link', get_option( 'page_on_front' ))?:'#'; ?>" class="site-btn"><?= __('Odbierz darmowe pytanie do wróżki!'); ?></a>
@@ -24,13 +24,13 @@
 					<div class="footer-widget about-widget">
 						<img src="<?= get_template_directory_uri(); ?>/img/logo-white.svg" alt="logo">
 						<p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum.Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-						<div class="fw-social social">
+						<!-- <div class="fw-social social">
 							<a href="#"><i class="fa fa-pinterest"></i></a>
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
 							<a href="#"><i class="fa fa-dribbble"></i></a>
 							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -72,7 +72,7 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<?php
-								if(has_nav_menu('menu-1')):
+								if(has_nav_menu('menu-2')):
 									wp_nav_menu(
 										array(
 											'menu'   => 'menu-1',
