@@ -584,13 +584,13 @@ $screen-xl-min: 1200px;
 	img {
 		width: 360px;
 		@include lg {
-			width: 320px;
-		}
-		@include md {
 			width: 300px;
 		}
+		@include md {
+			width: 280px;
+		}
 		@include sm {
-			width: 260px;
+			width: 240px;
 		}
 		@include xs {
 			width: 200px;
