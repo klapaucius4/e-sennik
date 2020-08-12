@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-lg-9">
             <?php
-            query_posts('orderby=title&order=ASC');
+            // query_posts('orderby=title&order=ASC');
             while(have_posts()): the_post();
             ?>
                 <div class="blog-post">
