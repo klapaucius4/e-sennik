@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-lg-8 banner-text text-white">
 					<h3><?= __('Chciałbyś porozmawiać z wróżką lub wróżbitą?'); ?></h3>
-					<p><?= __('Lorem ipsum'); ?></p>
+					<p><?= __('Potrzebujesz dogłębnej analizy swojego snu? Ciekawi Cię Twoja przyszłość? Droczy Cię jakaś kwestia związana z miłością, zdrowiem lub pieniędzmi? Wybróbuj naszą nową funkcjonalność, jaką rozmowa online z wróżką/wróżbitą!'); ?></p>
 				</div>
 				<div class="col-lg-4 text-left text-lg-right">
 					<a href="<?= get_field('wrozba_link', get_option( 'page_on_front' ))?:'#'; ?>" class="site-btn"><?= __('Odbierz darmowe pytanie do wróżki!'); ?></a>
