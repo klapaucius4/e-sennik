@@ -3,5 +3,5 @@
         <input type="text" placeholder="<?= __('Co Ci się przyśniło?') ?>" name="s" class="search-auto-complete">
         <button class="site-btn"><?= __('Szukaj'); ?></button>
     </form>
-    <p><?= __('Jeśli nie możesz odnaleźć swojego snu, spróbuj użyć pokrewnych fraz, innych słów lub synonimów.'); ?></p>
+    <p><?= __('Jeśli nie możesz odnaleźć swojego snu, spróbuj użyć pokrewnych fraz, innych słów lub synonimów. Możesz też użyć alfabetycznego spisu haseł.'); ?></p>
 </div>
