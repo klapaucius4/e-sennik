@@ -787,10 +787,11 @@ ol {
     opacity: 0.25; }
 
 .footer-widget.about-widget img {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  width: 70%; }
   @media (max-width: 1199.98px) {
     .footer-widget.about-widget img {
-      width: 70%; } }
+      width: 100%; } }
 
 .footer-widget.about-widget p {
   opacity: 0.25;
