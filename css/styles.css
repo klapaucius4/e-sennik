@@ -788,6 +788,9 @@ ol {
 
 .footer-widget.about-widget img {
   margin-bottom: 40px; }
+  @media (max-width: 991.98px) {
+    .footer-widget.about-widget img {
+      width: 70%; } }
 
 .footer-widget.about-widget p {
   opacity: 0.25;
@@ -847,7 +850,7 @@ ol {
         color: #e55a99; }
 
 .copyright {
-  float: left;
+  text-align: center;
   color: #fff;
   font-size: 14px;
   padding-top: 3px;
