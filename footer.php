@@ -112,6 +112,8 @@
 
     <?php wp_footer(); ?>
 
+	<!-- Adsense -->
+	<script data-ad-client="ca-pub-7466642798380021" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46121409-8"></script>
