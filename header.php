@@ -55,9 +55,10 @@
 			if(has_nav_menu('menu_main')):
 				wp_nav_menu(
 					array(
-						'menu'   => 'mein_main',
+						'theme_location'   => 'mein_main',
 						'container' => false,
-						'menu_class' => 'main-menu'
+						'menu_class' => 'main-menu',
+						'menu_id' => null
 					)
 				);
 			endif;

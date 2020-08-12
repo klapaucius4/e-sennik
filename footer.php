@@ -75,7 +75,7 @@
 								if(has_nav_menu('menu_footer')):
 									wp_nav_menu(
 										array(
-											'menu' => 'menu_footer',
+											'theme_location' => 'menu_footer',
 											'container' => false,
 											'menu_class' => null,
 											'menu_id' => null
