@@ -22,7 +22,7 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
 					<div class="footer-widget about-widget">
-						<img src="<?= get_template_directory_uri(); ?>/img/logo-white.svg" alt="logo">
+						<a href="<?= home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/img/logo-white.svg" alt="logo"></a>
 						<!-- <p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum.Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum</p> -->
 						<div class="fw-social social">
 							<!-- <a href="#"><i class="fa fa-pinterest"></i></a> -->
