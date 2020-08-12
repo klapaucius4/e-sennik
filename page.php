@@ -10,7 +10,6 @@ while(have_posts()): the_post();
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 about-text">
-					<h3><?= get_the_title(); ?></h3>
 					<?php the_content(); ?>
 				</div>
 				<!-- <div class="col-lg-6">
