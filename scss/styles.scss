@@ -1054,7 +1054,7 @@ $screen-xl-min: 1200px;
 	&.about-widget {
 		img {
 			margin-bottom: 40px;
-			@include md {
+			@include lg {
 				width: 70%;
 			}
 			
