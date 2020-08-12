@@ -794,9 +794,9 @@ $screen-xl-min: 1200px;
 	.site-btn {
 		margin-top: 20px;
 		background: $color-dark;
-		@include lg {
-			background: $color;
-		}
+		// @include lg {
+		// 	background: $color;
+		// }
 	}
 	
 	&.bottom {
