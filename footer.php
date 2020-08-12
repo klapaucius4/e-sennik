@@ -20,7 +20,7 @@
 	<section class="footer-top-section text-white spad">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6">
 					<div class="footer-widget about-widget">
 						<img src="<?= get_template_directory_uri(); ?>/img/logo-white.svg" alt="logo">
 						<p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum.Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum</p>
@@ -50,23 +50,7 @@
 									);
 								endif;
 								?>
-								<!-- <ul>
-									<li><a href="">Web Hosting</a></li>
-									<li><a href="">WordPress Hosting</a></li>
-									<li><a href="">VPS Hosting</a></li>
-									<li><a href="">Cloud Server</a></li>
-									<li><a href="">Reseller Package</a></li>
-									<li><a href="">Dedicated Hosting</a></li>
-								</ul> -->
 							</div>
-							<!-- <div class="col-sm-6">
-								<ul>
-									<li><a href="">Web Hosting</a></li>
-									<li><a href="">WordPress Hosting</a></li>
-									<li><a href="">VPS Hosting</a></li>
-									<li><a href="">Cloud Server</a></li>
-								</ul>
-							</div> -->
 						</div>
 					</div>
 				</div>
