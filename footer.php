@@ -36,21 +36,25 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="footer-widget">
 						<h4 class="fw-title"><?= __('Mapa witryny'); ?></h4>
-						<?php
-							if(has_nav_menu('menu-1')):
-								wp_nav_menu(
-									array(
-										'menu'   => 'menu-1',
-										'container' => false,
-										'menu_class' => null,
-										'menu_id' => null
-									)
-								);
-							endif;
-						?>
+						<div class="row">
+							<div class="col-sm-6">
+								<?php
+								if(has_nav_menu('menu-1')):
+									wp_nav_menu(
+										array(
+											'menu'   => 'menu-1',
+											'container' => false,
+											'menu_class' => null,
+											'menu_id' => null
+										)
+									);
+								endif;
+								?>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-4  col-md-6">
+				<div class="col-lg-4 col-md-6">
 					<div class="footer-widget">
 						<h4 class="fw-title"><?= __('Ostatnie artykuły'); ?></h4>
 						<?php
