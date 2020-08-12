@@ -48,7 +48,7 @@
 		<div class="nav-warp">
 
 			<div class="user-panel">
-				<a href="<?= get_field('wrozba_link', get_option( 'page_on_front' ), '#'); ?>"><?= __('Wróżba online'); ?></a>
+				<a href="<?= get_field('wrozba_link', get_option( 'page_on_front' ))?:'#'; ?>"><?= __('Wróżba online'); ?></a>
 			</div>
 
 			<?php
