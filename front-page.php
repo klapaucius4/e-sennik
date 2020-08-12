@@ -12,8 +12,8 @@ get_header();
 			<div class="hero-content text-white">
 				<div class="row w-100">
 					<div class="col-lg-6 pr-0">
-						<h1>Sennik Online</h1>
-						<p class="mb-2">Wyszukaj znaczenie swoich snów w naszej internetowej księdze snów.</p>
+						<h1><?= get_bloginfo('name'); ?></h1>
+						<p class="mb-2"><?= __('Wyszukaj znaczenie swoich snów w naszej internetowej księdze snów.'); ?></p>
 						<?php
 							$bottomSearchForm = false;
 							include(locate_template('template-parts/search-form.php'));

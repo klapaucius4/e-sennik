@@ -40,7 +40,7 @@
     </div>
     <!-- widget -->
     <div class="sb-widget">
-        <h2 class="sb-title"><?= __('A może śniłeś też o...?'); ?>:</h2>
+        <h2 class="sb-title"><?= __('A może śniłeś też o...?'); ?></h2>
         <?php
         $args = array(
             'post_type' => 'post',
