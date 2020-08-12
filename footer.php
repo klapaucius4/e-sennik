@@ -1,7 +1,5 @@
-<?php
-if ( ! defined( 'ABSPATH' ) ) exit;
+<?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 
-	/*
 	<!-- Banner section -->
 	<section class="banner-section set-bg" data-setbg="<?= get_template_directory_uri(); ?>/img/banner-bg.svg">
 		<div class="container">
@@ -17,7 +15,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		</div>
 	</section>
 	<!-- Banner section end -->
-	*/ ?>
 	
 	<!-- Footer top section -->
 	<section class="footer-top-section text-white spad">

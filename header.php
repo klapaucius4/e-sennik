@@ -48,7 +48,7 @@
 		<div class="nav-warp">
 
 			<div class="user-panel">
-				<!-- <a href="#"><?= __('Wróżba online'); ?></a> -->
+				<a href="#"><?= __('Wróżba online'); ?></a>
 			</div>
 
 			<?php
