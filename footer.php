@@ -36,22 +36,18 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="footer-widget">
 						<h4 class="fw-title"><?= __('Mapa witryny'); ?></h4>
-						<div class="row">
-							<div class="col-sm-6">
-								<?php
-								if(has_nav_menu('menu-1')):
-									wp_nav_menu(
-										array(
-											'menu'   => 'menu-1',
-											'container' => false,
-											'menu_class' => null,
-											'menu_id' => null
-										)
-									);
-								endif;
-								?>
-							</div>
-						</div>
+						<?php
+							if(has_nav_menu('menu-1')):
+								wp_nav_menu(
+									array(
+										'menu'   => 'menu-1',
+										'container' => false,
+										'menu_class' => null,
+										'menu_id' => null
+									)
+								);
+							endif;
+						?>
 					</div>
 				</div>
 				<div class="col-lg-4  col-md-6">
