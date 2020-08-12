@@ -46,11 +46,10 @@
 			<i class="fa fa-bars"></i>
 		</div>
 		<div class="nav-warp">
-			<?php /*
+
 			<div class="user-panel">
-				<a href="#"><?= __('Wróżba online'); ?></a>
+				<!-- <a href="#"><?= __('Wróżba online'); ?></a> -->
 			</div>
-			*/ ?>
 
 			<?php
 			if(has_nav_menu('menu-1')):
