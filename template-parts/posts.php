@@ -59,6 +59,6 @@
 </section>
 <!-- Footer top section end -->
 
-<?php get_template_part('template-parts/letters'); ?>
+<?php get_template_part('template-parts/bottom-search-form'); ?>
 
 <?php get_template_part('template-parts/letters'); ?>
