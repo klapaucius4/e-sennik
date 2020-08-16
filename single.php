@@ -33,8 +33,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 mb-4">
+                <div class="row mt-5">
+                    <div class="col-md-12 mb-3">
                         <h5><?= __('Komentarze'); ?></h5>
                     </div>
                     <div class="col-md-12">
