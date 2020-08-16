@@ -35,7 +35,7 @@
                 </div>
                 <div class="row mt-5">
                     <div class="col-md-12 mb-3">
-                        <h5><?= __('Komentarze'); ?></h5>
+                        <h5><?= __('Komentarze:'); ?></h5>
                     </div>
                     <div class="col-md-12">
                         <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5" data-width=""></div>
