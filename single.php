@@ -38,7 +38,7 @@
                         <h5><?= __('Komentarze:'); ?></h5>
                     </div>
                     <div class="col-md-12">
-                        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5" data-width=""></div>
+                        <div class="fb-comments" data-href="https://e-sennik.com/" data-numposts="5" data-width=""></div>
                     </div>
                 </div>
 

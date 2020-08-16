@@ -113,7 +113,7 @@
     <?php wp_footer(); ?>
 
 	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v8.0&appId=296367831647964&autoLogAppEvents=1" nonce="QQ9rdIIB"></script>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v8.0&appId=170120483161667&autoLogAppEvents=1" nonce="eODqkXJq"></script>
 
 	<!-- Adsense -->
 	<script data-ad-client="ca-pub-7466642798380021" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
