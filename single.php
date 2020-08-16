@@ -11,23 +11,34 @@
 		</div>
         <div class="row">
             <div class="col-lg-9">
-                <div class="blog-post">
-                    <!-- <img src="<?= get_template_directory_uri(); ?>/img/blog/1.jpg" alt="" class="post-thumb"> -->
-                    <div class="post-date"><?= get_the_date(); ?></div>
-                    <h4><a href="<?php the_permalink(); ?>"><?= the_title(); ?></a></h4>
-                    <div class="post-metas">
-                        <!-- <div class="post-meta">By Admin</div> -->
-                        <div class="post-meta">
-                        <?php
-                            if(get_the_tag_list()) {
-                                echo "Tagi: " . get_the_tag_list('',', ','');
-                            }
-                        ?>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="blog-post">
+                            <!-- <img src="<?= get_template_directory_uri(); ?>/img/blog/1.jpg" alt="" class="post-thumb"> -->
+                            <div class="post-date"><?= get_the_date(); ?></div>
+                            <h4><a href="<?php the_permalink(); ?>"><?= the_title(); ?></a></h4>
+                            <div class="post-metas">
+                                <!-- <div class="post-meta">By Admin</div> -->
+                                <div class="post-meta">
+                                <?php
+                                    if(get_the_tag_list()) {
+                                        echo "Tagi: " . get_the_tag_list('',', ','');
+                                    }
+                                ?>
+                                </div>
+                                <!-- <div class="post-meta">3 comments</div> -->
+                            </div>
+                            <?php the_content(); ?>
                         </div>
-                        <!-- <div class="post-meta">3 comments</div> -->
                     </div>
-                    <?php the_content(); ?>
                 </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5" data-width=""></div>
+                    </div>
+                </div>
+
             </div>
             <?php get_sidebar('sidebar'); ?>
         </div>

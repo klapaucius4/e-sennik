@@ -6,7 +6,7 @@ if ( ! function_exists( 'es_setup' ) ) :
     function es_setup() {
     
         /*
-        load_theme_textdomain( 'es', get_template_directory() . '/languages' );
+        
     
         add_theme_support( 'automatic-feed-links' );
     
@@ -14,6 +14,10 @@ if ( ! function_exists( 'es_setup' ) ) :
     
         add_theme_support( 'post-thumbnails' );
         */
+
+        
+        load_theme_textdomain( 'es', get_template_directory() . '/languages' );
+
         register_nav_menus(
             array(
             'menu_main' => esc_html__( 'Menu główne', 'es' ),

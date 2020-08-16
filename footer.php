@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-lg-8 banner-text text-white">
 					<h3><?= __('Chciałbyś porozmawiać z wróżką lub wróżbitą?'); ?></h3>
-					<p><?= __('Potrzebujesz dogłębnej analizy swojego snu? Ciekawi Cię Twoja przyszłość? Droczy Cię jakaś kwestia związana z miłością, zdrowiem lub pieniędzmi? Wybróbuj naszą nową funkcjonalność, jaką rozmowa online z wróżką/wróżbitą!'); ?></p>
+					<p><?= __('Potrzebujesz dogłębnej analizy swojego snu? Ciekawi Cię Twoja przyszłość? Droczy Cię jakaś kwestia związana z miłością, zdrowiem lub pieniędzmi? Wybróbuj naszą nową funkcjonalność, jaką rozmowa online z wróżką lub wróżbitą!'); ?></p>
 				</div>
 				<div class="col-lg-4 text-left text-lg-right">
 					<a href="<?= get_field('wrozba_link', get_option( 'page_on_front' ))?:'#'; ?>" class="site-btn"><?= __('Odbierz darmowe pytanie do wróżki!'); ?></a>
@@ -111,6 +111,9 @@
 	<script src="<?= get_template_directory_uri(); ?>/js/main.js"></script>
 
     <?php wp_footer(); ?>
+
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v8.0&appId=296367831647964&autoLogAppEvents=1" nonce="QQ9rdIIB"></script>
 
 	<!-- Adsense -->
 	<script data-ad-client="ca-pub-7466642798380021" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
