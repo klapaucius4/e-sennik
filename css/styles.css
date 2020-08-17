@@ -1143,7 +1143,7 @@ ol {
 	Wordpress styles
 -------------------- */
 .login h1 a {
-  background-image: '../img/logo-pink.svg';
+  background-image: url("../img/logo-pink.svg");
   padding-bottom: 30px; }
 
 /* ----------------
