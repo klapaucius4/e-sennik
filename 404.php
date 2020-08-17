@@ -7,7 +7,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center">
                     <span class="display-1 d-block">404</span>
-                    <div class="mb-4 lead"><?= __('Nie odnaleziono strony...') ?></div>
+                    <div class="mb-5 lead"><?= __('Nie odnaleziono strony...') ?></div>
                     <a href="<?= home_url(); ?>" class="site-btn"><?= __('Wróć do strony głównej'); ?></a>
                 </div>
             </div>
