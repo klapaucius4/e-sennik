@@ -41,3 +41,17 @@ function ts_remove_wp_menu_pages() {
     //remove_menu_page( 'edit.php' );
 }
 add_action( 'admin_menu', 'ts_remove_wp_menu_pages' );
+
+
+
+function my_login_logo_one() {
+    ?> 
+    <style type="text/css"> 
+    body.login div#login h1 a {
+        background-image: url(<?= get_template_directory_uri(); ?>/img/logo-pink.svg);
+        padding-bottom: 30px;
+    } 
+    </style>
+<?php 
+}
+add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
