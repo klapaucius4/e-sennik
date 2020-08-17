@@ -1139,6 +1139,13 @@ ol {
   margin-top: 107px;
   height: 685px; }
 
+/* ------------------
+	Wordpress styles
+-------------------- */
+.login h1 a {
+  background-image: '../img/logo-pink.svg';
+  padding-bottom: 30px; }
+
 /* ----------------
   Responsive
 ---------------------*/
