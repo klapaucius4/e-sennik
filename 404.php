@@ -8,7 +8,7 @@
                 <div class="col-md-12 text-center">
                     <span class="display-1 d-block">404</span>
                     <div class="mb-4 lead"><?= __('Nie odnaleziono strony...') ?></div>
-                    <a href="<?= home_url(); ?>" class="btn btn-link"><?= __('Wróć do strony głównej'); ?></a>
+                    <a href="<?= home_url(); ?>" class="site-btn"><?= __('Wróć do strony głównej'); ?></a>
                 </div>
             </div>
         </div>
