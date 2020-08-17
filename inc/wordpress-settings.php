@@ -49,7 +49,6 @@ function my_login_logo_one() {
     <style type="text/css"> 
     body.login div#login h1 a {
         background-image: url(<?= get_template_directory_uri(); ?>/img/logo-pink.svg);
-        padding-bottom: 30px;
         width: 320px;
         height: 106px;
         background-size: 320px;
