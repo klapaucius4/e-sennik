@@ -11,7 +11,7 @@
                         <p><?= __('Sny na literę'); ?></p>
                         <h2><q><?= $term->name; ?></q></h2>
                 <?php else: ?>
-                    <h2><?= $term->name; ?></h2>
+                    <h2><?= single_term_title(); ?></h2>
                 <?php endif; ?>
             <?php elseif(is_home()): ?>
                 <h2><?= get_the_title(get_option('page_for_posts')); ?></h2>
