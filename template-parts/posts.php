@@ -10,8 +10,20 @@
                     if($parentTerm && $parentTerm->slug == 'sen'): ?>
                         <p><?= __('Sny na literę'); ?></p>
                         <h2><q><?= $term->name; ?></q></h2>
-                <?php else: ?>
-                    <h2><?= single_tag_title(); ?></h2>
+                <?php else: 
+                    
+                    if ( is_category() ) {
+                        $title = single_cat_title( '', false );
+                    } elseif ( is_tag() ) {
+                        $title = single_tag_title( '', false );
+                    } elseif ( is_post_type_archive() ) {
+                        $title = post_type_archive_title( '', false );
+                    } elseif ( is_tax() ) {
+                        $title = single_term_title( '', false );
+                    }
+                    
+                    ?>
+                    <h2><?= $title; ?></h2>
                 <?php endif; ?>
             <?php elseif(is_home()): ?>
                 <h2><?= get_the_title(get_option('page_for_posts')); ?></h2>
