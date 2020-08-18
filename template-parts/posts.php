@@ -15,7 +15,7 @@
                     if ( is_category() ) {
                         $title = single_cat_title( '', false );
                     } elseif ( is_tag() ) {
-                        $title = single_tag_title( '', false );
+                        $title = single_tag_title( 'Tag: ', false );
                     } elseif ( is_post_type_archive() ) {
                         $title = post_type_archive_title( '', false );
                     } elseif ( is_tax() ) {
