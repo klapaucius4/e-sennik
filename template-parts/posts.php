@@ -6,6 +6,7 @@
             <?php
                 $term = get_queried_object();
                 if($term->taxonomy):
+                    var_dump('test');
                     $parentTerm = get_term_by('id', $term->parent, $term->taxonomy);
                     if($parentTerm && $parentTerm->slug == 'sen'): ?>
                         <p><?= __('Sny na literę'); ?></p>
