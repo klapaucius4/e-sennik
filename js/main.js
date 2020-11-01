@@ -187,13 +187,14 @@ $(window).on('load', function() {
 					availableTags.push(item.title.rendered);
 				});
 
-				console.log(availableTags);
+				// console.log(availableTags);
+
+				$(this).autocomplete({
+					source: availableTags
+				});
 			}
 		});
 
-		$(this).autocomplete({
-			source: availableTags
-		  });
 	});
 		
 
