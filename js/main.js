@@ -198,6 +198,7 @@ $(window).on('load', function() {
 
 	$( ".search-auto-complete" ).autocomplete({
 		source: function( request, response ) {
+			console.log(request);
 		  $.ajax({
 			url: "/wp-json/wp/v2/posts",
 			dataType: "json",
