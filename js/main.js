@@ -174,12 +174,13 @@ $(window).on('load', function() {
 	  
 	$(".search-auto-complete").on('keyup', function(){
 		var availableTags = [];
+		var thisInput = $(this);
 
 		$.ajax({
 			url : "/wp-json/wp/v2/posts",
 			method: "GET",
 			data: {
-				search: $(this).val()
+				search: thisInput.val()
 			},
 			success : function(response) {
 				response.forEach(function(item, index) {
@@ -188,7 +189,7 @@ $(window).on('load', function() {
 			},
 			complete : function(response) {
 				console.log(availableTags);
-				$(this).autocomplete({
+				$(thisInput).autocomplete({
 					source: availableTags
 				});
 			}
