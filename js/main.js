@@ -198,7 +198,6 @@ $(window).on('load', function() {
 
 	$( ".search-auto-complete" ).autocomplete({
 		source: function( request, response ) {
-			console.log(request);
 		  $.ajax({
 			url: "/wp-json/wp/v2/posts",
 			dataType: "json",
@@ -213,7 +212,7 @@ $(window).on('load', function() {
 		},
 		minLength: 3,
 		select: function( event, ui ) {
-		  log( ui.item ?
+		  console.log( ui.item ?
 			"Selected: " + ui.item.label :
 			"Nothing selected, input was " + this.value);
 		},
