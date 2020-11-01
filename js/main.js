@@ -171,9 +171,8 @@ $(window).on('load', function() {
 
 
 
-
 	  
-	$(".search-auto-complete").on('click', function(){
+	$(".search-auto-complete").on('keyup', function(){
 		var availableTags = [];
 
 		$.ajax({
