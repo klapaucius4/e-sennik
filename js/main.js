@@ -187,6 +187,7 @@ $(window).on('load', function() {
 				});
 			},
 			complete : function(response) {
+				console.log(availableTags);
 				$(this).autocomplete({
 					source: availableTags
 				});
