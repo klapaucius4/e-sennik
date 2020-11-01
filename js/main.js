@@ -175,46 +175,49 @@ $(window).on('load', function() {
 	$(".search-auto-complete").on('keyup', function(){
 		var availableTags = [];
 
-		// $.ajax({
-		// 	url : "/wp-json/wp/v2/posts",
-		// 	method: "GET",
-		// 	data: {
-		// 		search: $(this).val()
-		// 	},
-		// 	success : function(response) {
-		// 		response.forEach(function(item, index) {
-		// 			availableTags.push(item.title.rendered);
-		// 		});
-		// 	}
-		// });
-
-		var availableTags = [
-			"ActionScript",
-			"AppleScript",
-			"Asp",
-			"BASIC",
-			"C",
-			"C++",
-			"Clojure",
-			"COBOL",
-			"ColdFusion",
-			"Erlang",
-			"Fortran",
-			"Groovy",
-			"Haskell",
-			"Java",
-			"JavaScript",
-			"Lisp",
-			"Perl",
-			"PHP",
-			"Python",
-			"Ruby",
-			"Scala",
-			"Scheme"
-		  ];
-		$(this).autocomplete({
-			source: availableTags
+		$.ajax({
+			url : "/wp-json/wp/v2/posts",
+			method: "GET",
+			data: {
+				search: $(this).val()
+			},
+			success : function(response) {
+				response.forEach(function(item, index) {
+					availableTags.push(item.title.rendered);
+				});
+			},
+			complete : function(response) {
+				$(this).autocomplete({
+					source: availableTags
+				});
+			}
 		});
+
+		// var availableTags = [
+		// 	"ActionScript",
+		// 	"AppleScript",
+		// 	"Asp",
+		// 	"BASIC",
+		// 	"C",
+		// 	"C++",
+		// 	"Clojure",
+		// 	"COBOL",
+		// 	"ColdFusion",
+		// 	"Erlang",
+		// 	"Fortran",
+		// 	"Groovy",
+		// 	"Haskell",
+		// 	"Java",
+		// 	"JavaScript",
+		// 	"Lisp",
+		// 	"Perl",
+		// 	"PHP",
+		// 	"Python",
+		// 	"Ruby",
+		// 	"Scala",
+		// 	"Scheme"
+		//   ];
+		
 		
 	});
 		
