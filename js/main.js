@@ -203,7 +203,7 @@ $(window).on('load', function() {
 			dataType: "json",
 			method: "GET",
 			data: {
-				search: thisInput.val()
+				q: request.term
 			},
 			success: function( data ) {
 			  response( data );
