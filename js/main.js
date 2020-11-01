@@ -186,6 +186,8 @@ $(window).on('load', function() {
 					// console.log(item.title.rendered);
 					availableTags.push(item.title.rendered);
 				});
+
+				console.log(availableTags);
 			}
 		});
 
