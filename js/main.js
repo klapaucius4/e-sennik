@@ -188,13 +188,13 @@ $(window).on('load', function() {
 				});
 
 				// console.log(availableTags);
-
-				$(this).autocomplete({
-					source: availableTags
-				});
 			}
 		});
 
+		$(this).autocomplete({
+			source: availableTags
+		});
+		
 	});
 		
 
