@@ -25,22 +25,8 @@
             while(have_posts()): the_post();
             ?>
                 <div class="blog-post">
-                    <?php /*<img src="<?= get_template_directory_uri(); ?>/img/blog/1.jpg" alt="" class="post-thumb">*/ ?>
-                    <!-- <div class="post-date">Oct 25, 2018</div> -->
                     <h4><a href="<?php the_permalink(); ?>"><?= the_title(); ?></a></h4>
-                    <div class="post-metas">
-                        <!-- <div class="post-meta">By Admin</div> -->
-                        <div class="post-meta">
-                        <?php
-                            if(get_the_tag_list()) {
-                                echo "Tagi: " . get_the_tag_list('',', ','');
-                            }
-                        ?>
-                        </div>
-                        <!-- <div class="post-meta">3 comments</div> -->
-                    </div>
-                    <?php the_excerpt(); ?>
-                    <a href="<?= get_the_permalink(); ?>"><div class="post-date mt-2"><?= __('Zobacz więcej'); ?></div></a>
+                    <div class="post-metas"></div>
                 </div>
             <?php endwhile; wp_reset_postdata(); wp_reset_query(); ?>
 
