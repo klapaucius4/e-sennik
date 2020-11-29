@@ -26,7 +26,7 @@
             ?>
                 <div class="blog-post">
                     <h4><a href="<?php the_permalink(); ?>"><?= the_title(); ?></a></h4>
-                    <!-- <div class="post-metas"></div> -->
+                    <div class="post-metas"></div>
                 </div>
             <?php endwhile; wp_reset_postdata(); wp_reset_query(); ?>
 
