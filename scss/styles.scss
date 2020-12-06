@@ -1275,7 +1275,7 @@ $screen-xl-min: 1200px;
 	border-bottom: 1px solid #f3f3f3;
 	h4 {
 		margin-bottom: 6px;
-		a {
+		&, a {
 			color: $color-dark;
 			&::first-letter {
 				font-size: 200%;
