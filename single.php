@@ -41,7 +41,7 @@
                         $tagsIDs[] = $tag->term_id;
                     }
                     $args = array(
-                        'post_type' => 'services',
+                        'post_type' => 'post',
                         'post_status' => 'publish',
                         'posts_per_page' => 8,
                         'orderby' => 'rand',
