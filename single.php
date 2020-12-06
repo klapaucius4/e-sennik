@@ -34,6 +34,27 @@
                     </div>
                 </div>
                 <div class="row mt-5">
+                    <div class="col-md-12">
+                        <?php
+                        $tags = get_the_tags();
+                        var_dump($tags); exit;
+                        $args = array(
+                            'post_type' => 'services',
+                            'post_status' => 'publish',
+                            'posts_per_page' => 8,
+                            'orderby' => 'rand',
+                            'tag__in' => array( 37, 47 )
+                        );
+                        $myQuery = new WP_Query($args);
+                        while($myQuery->have_posts()): $myQuery->the_post(); ?>
+                        <div class="blog-post">
+                            <h4><a href="<?= get_the_permalink(); ?>"><?= get_the_title(); ?></a></h4>
+                            <div class="post-metas"></div>
+                        </div>
+                        <?php endwhile; wp_reset_postdata(); ?>
+                    </div>
+                </div>
+                <div class="row mt-5">
                     <div class="col-md-12 mb-3">
                         <h5><?= __('Komentarze:'); ?></h5>
                     </div>
