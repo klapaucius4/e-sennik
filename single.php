@@ -37,13 +37,16 @@
                     <div class="col-md-12">
                         <?php
                         $tags = get_the_tags();
-                        var_dump($tags); exit;
+                        $tagsIDs = array();
+                        foreach($tags as $tag){
+                            $tagsIDs[] = $tag->term_id;
+                        }
                         $args = array(
                             'post_type' => 'services',
                             'post_status' => 'publish',
                             'posts_per_page' => 8,
                             'orderby' => 'rand',
-                            'tag__in' => array( 37, 47 )
+                            'tag__in' => $tagsIDs
                         );
                         $myQuery = new WP_Query($args);
                         while($myQuery->have_posts()): $myQuery->the_post(); ?>
