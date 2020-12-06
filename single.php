@@ -34,28 +34,30 @@
                     </div>
                 </div>
                 <div class="row mt-5">
+                <?php
+                    $tags = get_the_tags();
+                    $tagsIDs = array();
+                    foreach($tags as $tag){
+                        $tagsIDs[] = $tag->term_id;
+                    }
+                    $args = array(
+                        'post_type' => 'services',
+                        'post_status' => 'publish',
+                        'posts_per_page' => 8,
+                        'orderby' => 'rand',
+                        'tag__in' => $tagsIDs
+                    );
+                    $myQuery = new WP_Query($args);
+                    if($myQuery->have_posts()): ?>
                     <div class="col-md-12">
-                        <?php
-                        $tags = get_the_tags();
-                        $tagsIDs = array();
-                        foreach($tags as $tag){
-                            $tagsIDs[] = $tag->term_id;
-                        }
-                        $args = array(
-                            'post_type' => 'services',
-                            'post_status' => 'publish',
-                            'posts_per_page' => 8,
-                            'orderby' => 'rand',
-                            'tag__in' => $tagsIDs
-                        );
-                        $myQuery = new WP_Query($args);
-                        while($myQuery->have_posts()): $myQuery->the_post(); ?>
+                        <?php while($myQuery->have_posts()): $myQuery->the_post(); ?>
                         <div class="blog-post">
                             <h4><a href="<?= get_the_permalink(); ?>"><?= get_the_title(); ?></a></h4>
                             <div class="post-metas"></div>
                         </div>
                         <?php endwhile; wp_reset_postdata(); ?>
                     </div>
+                    <?php endif; ?>
                 </div>
                 <div class="row mt-5">
                     <div class="col-md-12 mb-3">
