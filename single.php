@@ -41,6 +41,7 @@
                         foreach($tags as $tag){
                             $tagsIDs[] = $tag->term_id;
                         }
+                        
                         $args = array(
                             'post_type' => 'services',
                             'post_status' => 'publish',
