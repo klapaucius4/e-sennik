@@ -44,7 +44,7 @@
                         'post_type' => 'post',
                         'post_status' => 'publish',
                         'posts_per_page' => 8,
-                        'tag__in' => $tagsIDs,
+                        // 'tag__in' => $tagsIDs,
                         'orderby' => 'rand',
                     );
                     $myQuery = new WP_Query($args);
