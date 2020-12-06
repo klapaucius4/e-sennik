@@ -50,7 +50,7 @@
                     $myQuery = new WP_Query($args);
                     if($myQuery->have_posts()): ?>
                     <div class="col-md-12">
-                        <h4>Podobne sny:</h4>
+                        <h6 class="mb-4">Podobne sny:</h6>
                         <?php while($myQuery->have_posts()): $myQuery->the_post(); ?>
                         <div class="blog-post">
                             <h4><a href="<?= get_the_permalink(); ?>"><?= get_the_title(); ?></a></h4>
