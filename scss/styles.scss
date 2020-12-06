@@ -1278,7 +1278,10 @@ $screen-xl-min: 1200px;
 		margin-bottom: 6px;
 		&, a {
 			color: $color-dark;
-		}
+			&::first-letter {
+				font-size: 200%;
+				color: #8A2BE2;
+			}
 	}
 	p {
 		font-size: 15px;
