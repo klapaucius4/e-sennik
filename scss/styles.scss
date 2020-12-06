@@ -1275,10 +1275,12 @@ $screen-xl-min: 1200px;
 	border-bottom: 1px solid #f3f3f3;
 	h4 {
 		margin-bottom: 6px;
-		color: $color-dark;
-		&::first-letter {
-			font-size: 200%;
-			color: $color;
+		a {
+			color: $color-dark;
+			&::first-letter {
+				font-size: 200%;
+				color: $color;
+			}
 		}
 	}
 	p {
