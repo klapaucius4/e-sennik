@@ -1,5 +1,5 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
-if(!strip_tags($_POST['s'])){
+if(!strip_tags($_GET['s'])){
     wp_redirect(get_permalink(get_option('page_for_posts')));
 }
 ?>

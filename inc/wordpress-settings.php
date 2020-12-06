@@ -6,7 +6,7 @@ if ( ! function_exists( 'es_setup' ) ) :
     function es_setup() {
     
         /*
-        load_theme_textdomain( 'es', get_template_directory() . '/languages' );
+        
     
         add_theme_support( 'automatic-feed-links' );
     
@@ -14,9 +14,14 @@ if ( ! function_exists( 'es_setup' ) ) :
     
         add_theme_support( 'post-thumbnails' );
         */
+
+        
+        load_theme_textdomain( 'es', get_template_directory() . '/languages' );
+
         register_nav_menus(
             array(
-            'menu-1' => esc_html__( 'Menu główne', 'es' ),
+            'menu_main' => esc_html__( 'Menu główne', 'es' ),
+            'menu_footer' => esc_html__( 'Menu stopka', 'es' ),
             )
         );
     
@@ -36,3 +41,19 @@ function ts_remove_wp_menu_pages() {
     //remove_menu_page( 'edit.php' );
 }
 add_action( 'admin_menu', 'ts_remove_wp_menu_pages' );
+
+
+
+function my_login_logo_one() {
+    ?> 
+    <style type="text/css"> 
+    body.login div#login h1 a {
+        background-image: url(<?= get_template_directory_uri(); ?>/img/logo-pink.svg);
+        width: 320px;
+        height: 106px;
+        background-size: 320px;
+    } 
+    </style>
+<?php 
+}
+add_action( 'login_enqueue_scripts', 'my_login_logo_one' );

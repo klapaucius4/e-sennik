@@ -171,28 +171,57 @@ $(window).on('load', function() {
 
 
 
-
 	  
-	$(".search-auto-complete").on('click', function(){
-		var availableTags = [];
+	// $(".search-auto-complete").on('keyup', function(){
+	// 	var availableTags = [];
+	// 	var thisInput = $(this);
 
-		$.ajax({
-			url : "/wp-json/wp/v2/posts",
+	// 	$.ajax({
+	// 		url : "/wp-json/wp/v2/posts",
+	// 		method: "GET",
+	// 		data: {
+	// 			search: thisInput.val()
+	// 		},
+	// 		success : function(response) {
+	// 			response.forEach(function(item, index) {
+	// 				availableTags.push(item.title.rendered);
+	// 			});
+	// 		},
+	// 		complete : function(response) {
+	// 			console.log(availableTags);
+	// 			$(thisInput).autocomplete({
+	// 				source: availableTags
+	// 			});
+	// 		}
+	// 	});
+	// });
+
+	$( ".search-auto-complete" ).autocomplete({
+		source: function( request, response ) {
+		  $.ajax({
+			url: "/wp-json/wp/v2/posts",
+			dataType: "json",
 			method: "GET",
 			data: {
-				search: $(this).val()
+				q: request.term
 			},
-			success : function(response) {
-				response.forEach(function(item, index) {
-					// console.log(item.title.rendered);
-					availableTags.push(item.title.rendered);
-				});
+			success: function( data ) {
+			  response( data );
 			}
-		});
-
-		$(this).autocomplete({
-			source: availableTags
 		  });
+		},
+		minLength: 3,
+		select: function( event, ui ) {
+		  console.log( ui.item ?
+			"Selected: " + ui.item.label :
+			"Nothing selected, input was " + this.value);
+		},
+		open: function() {
+		//   $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+		},
+		close: function() {
+		//   $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+		}
 	});
 		
 

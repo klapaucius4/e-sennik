@@ -18,9 +18,9 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/flaticon.css"/>
+	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/flaticon.min.css"/>
 	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/owl.carousel.min.css"/>
-	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/animate.css"/>
+	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/animate.min.css"/>
 	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/jquery-ui.min.css"/>
 	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/styles.css"/>
 
@@ -46,17 +46,19 @@
 			<i class="fa fa-bars"></i>
 		</div>
 		<div class="nav-warp">
+
 			<div class="user-panel">
-				<a href="#"><?= __('Wróżba online'); ?></a>
+				<a href="<?= get_field('wrozba_link', get_option( 'page_on_front' )) ?:'#'; ?>"><?= __('Wróżba online'); ?></a>
 			</div>
 
 			<?php
-			if(has_nav_menu('menu-1')):
+			if(has_nav_menu('menu_main')):
 				wp_nav_menu(
 					array(
-						'menu'   => 'menu-1',
+						'theme_location' => 'menu_main',
 						'container' => false,
-						'menu_class' => 'main-menu'
+						'menu_class' => 'main-menu',
+						'menu_id' => null
 					)
 				);
 			endif;
