@@ -1274,14 +1274,14 @@ $screen-xl-min: 1200px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid #f3f3f3;
 	h4 {
-		// margin-bottom: 14px;
 		margin-bottom: 6px;
 		&, a {
 			color: $color-dark;
 			&::first-letter {
-				font-size: 200%;
-				color: #8A2BE2;
+				font-size: 140%;
+				color: $color;
 			}
+		}
 	}
 	p {
 		font-size: 15px;
